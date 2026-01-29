@@ -1,0 +1,85 @@
+{
+  "id": "2-18409079-1",
+  "page_title": "1982–83 Atlanta Hawks season",
+  "section_title": "Draft picks",
+  "caption": "Draft picks",
+  "doc": {
+    "id": "2-18409079-1",
+    "rows": [
+      [
+        "1",
+        "10",
+        "Keith Edmonson",
+        "United States",
+        "Purdue"
+      ],
+      [
+        "3",
+        "56",
+        "Joe Kopicki",
+        "United States",
+        "Detroit Mercy"
+      ],
+      [
+        "5",
+        "102",
+        "Mark Hall",
+        "United States",
+        "Minnesota"
+      ],
+      [
+        "6",
+        "126",
+        "Jay Bruchak",
+        "United States",
+        "Mount St. Mary's"
+      ],
+      [
+        "7",
+        "148",
+        "Horace Wyatt",
+        "United States",
+        "Clemson"
+      ],
+      [
+        "8",
+        "172",
+        "James Ratiff",
+        "United States",
+        "Howard"
+      ],
+      [
+        "9",
+        "194",
+        "Pierre Bland",
+        "United States",
+        "Elizabeth City State"
+      ],
+      [
+        "10",
+        "216",
+        "Ronnie McAdoo",
+        "United States",
+        "Old Dominion"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Nationality",
+      "College"
+    ],
+    "caption": "Draft picks",
+    "page_id": 18409079,
+    "page_title": "1982–83 Atlanta Hawks season",
+    "section_title": "Draft picks"
+  }
+}

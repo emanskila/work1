@@ -1,0 +1,71 @@
+{
+  "id": "2-14828476-4",
+  "page_title": "1966–67 Philadelphia 76ers season",
+  "section_title": "NBA finals",
+  "caption": "NBA finals",
+  "doc": {
+    "id": "2-14828476-4",
+    "rows": [
+      [
+        "Game 1",
+        "April 14",
+        "Philadelphia",
+        "141-135",
+        "San Francisco"
+      ],
+      [
+        "Game 2",
+        "April 16",
+        "Philadelphia",
+        "126-95",
+        "San Francisco"
+      ],
+      [
+        "Game 3",
+        "April 18",
+        "San Francisco",
+        "130-124",
+        "Philadelphia"
+      ],
+      [
+        "Game 4",
+        "April 20",
+        "San Francisco",
+        "108-122",
+        "Philadelphia"
+      ],
+      [
+        "Game 5",
+        "April 23",
+        "Philadelphia",
+        "109-117",
+        "San Francisco"
+      ],
+      [
+        "Game 6",
+        "April 24",
+        "San Francisco",
+        "122-125",
+        "Philadelphia"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Game",
+      "Date",
+      "Home Team",
+      "Result",
+      "Road Team"
+    ],
+    "caption": "NBA finals",
+    "page_id": 14828476,
+    "page_title": "1966–67 Philadelphia 76ers season",
+    "section_title": "NBA finals"
+  }
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "qid": "Q_COACH_ESPY",
+    "question": "Who is the coach of the team that won the Best NBA Player ESPY Award three consecutive times?",
+    "model": "gpt-4o-mini",
+    "parsed": {
+      "ontology_chain": {
+        "concepts": [
+          "team",
+          "coach",
+          "player",
+          "award"
+        ],
+        "relations": [
+          "receive",
+          "playfor",
+          "coachedby"
+        ]
+      },
+      "reasoning_path": [
+        "SQ1",
+        "SQ2",
+        "SQ3"
+      ],
+      "concepts": {
+        "involved": [
+          "team",
+          "coach",
+          "player",
+          "award"
+        ],
+        "instantiated": [
+          {
+            "concept": "award",
+            "instance": "Best NBA Player ESPY Award",
+            "from_text": "Best NBA Player ESPY Award"
+          },
+          {
+            "concept": "player",
+            "instance": "player who won the award",
+            "from_text": "who is the coach of the team that won"
+          },
+          {
+            "concept": "team",
+            "instance": "team that won",
+            "from_text": "the team that won"
+          },
+          {
+            "concept": "coach",
+            "instance": "coach of the team",
+            "from_text": "the coach of the team"
+          }
+        ],
+        "target": [
+          "coach"
+        ]
+      },
+      "subquestions": [
+        {
+          "sqid": "SQ1",
+          "question": "Which player won the Best NBA Player ESPY Award three consecutive times?",
+          "input_concept": "award",
+          "output_concept": "player",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "receive",
+                "direction": "reverse"
+              }
+            ]
+          }
+        },
+        {
+          "sqid": "SQ2",
+          "question": "Which team did the player who won the award play for?",
+          "input_concept": "player",
+          "output_concept": "team",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "playfor",
+                "direction": "forward"
+              }
+            ]
+          }
+        },
+        {
+          "sqid": "SQ3",
+          "question": "Who is the coach of the team?",
+          "input_concept": "team",
+          "output_concept": "coach",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "coachedby",
+                "direction": "forward"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "raw": "{\n  \"ontology_chain\": {\n    \"concepts\": [\"team\", \"coach\", \"player\", \"award\"],\n    \"relations\": [\"receive\", \"draftby\", \"coachedby\"]\n  },\n  \"reasoning_path\": [\"SQ1\", \"SQ2\"],\n  \"concepts\": {\n    \"involved\": [\"team\", \"coach\", \"player\", \"award\"],\n    \"instantiated\": [\n      {\"concept\": \"award\", \"instance\": \"Best NBA Player ESPY Award\", \"from_text\": \"Best NBA Player ESPY Award\"},\n      {\"concept\": \"player\", \"instance\": \"player who won the award\", \"from_text\": \"who is the coach of the team that won\"},\n      {\"concept\": \"team\", \"instance\": \"team that won\", \"from_text\": \"the team that won\"},\n      {\"concept\": \"coach\", \"instance\": \"coach of the team\", \"from_text\": \"the coach of the team\"}\n    ],\n    \"target\": [\"coach\"]\n  },\n  \"subquestions\": [\n    {\n      \"sqid\": \"SQ1\",\n      \"question\": \"Which player won the Best NBA Player ESPY Award three consecutive times?\",\n      \"input_concept\": \"award\",\n      \"output_concept\": \"player\",\n      \"ontology\": {\n        \"relations\": [\n          {\"relation_id\": \"receive\", \"direction\": \"forward\"}\n        ]\n      }\n    },\n    {\n      \"sqid\": \"SQ2\",\n      \"question\": \"Who is the coach of the team that the player who won the award played for?\",\n      \"input_concept\": \"player\",\n      \"output_concept\": \"coach\",\n      \"ontology\": {\n        \"relations\": [\n          {\"relation_id\": \"playfor\", \"direction\": \"forward\"},\n          {\"relation_id\": \"coachedby\", \"direction\": \"forward\"}\n        ]\n      }\n    }\n  ]\n}",
+    "refined_raw": "{\"ontology_chain\": {\"concepts\": [\"team\", \"coach\", \"player\", \"award\"], \"relations\": [\"receive\", \"playfor\", \"coachedby\"]}, \"reasoning_path\": [\"SQ1\", \"SQ2\", \"SQ3\"], \"concepts\": {\"involved\": [\"team\", \"coach\", \"player\", \"award\"], \"instantiated\": [{\"concept\": \"award\", \"instance\": \"Best NBA Player ESPY Award\", \"from_text\": \"Best NBA Player ESPY Award\"}, {\"concept\": \"player\", \"instance\": \"player who won the award\", \"from_text\": \"who is the coach of the team that won\"}, {\"concept\": \"team\", \"instance\": \"team that won\", \"from_text\": \"the team that won\"}, {\"concept\": \"coach\", \"instance\": \"coach of the team\", \"from_text\": \"the coach of the team\"}], \"target\": [\"coach\"]}, \"subquestions\": [{\"sqid\": \"SQ1\", \"question\": \"Which player won the Best NBA Player ESPY Award three consecutive times?\", \"input_concept\": \"award\", \"output_concept\": \"player\", \"ontology\": {\"relations\": [{\"relation_id\": \"receive\", \"direction\": \"reverse\"}]}}, {\"sqid\": \"SQ2\", \"question\": \"Which team did the player who won the award play for?\", \"input_concept\": \"player\", \"output_concept\": \"team\", \"ontology\": {\"relations\": [{\"relation_id\": \"playfor\", \"direction\": \"forward\"}]}}, {\"sqid\": \"SQ3\", \"question\": \"Who is the coach of the team?\", \"input_concept\": \"team\", \"output_concept\": \"coach\", \"ontology\": {\"relations\": [{\"relation_id\": \"coachedby\", \"direction\": \"forward\"}]}}]}"
+  }
+]

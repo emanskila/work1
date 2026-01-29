@@ -1,0 +1,81 @@
+[
+  {
+    "qid": "80c2e131-7403-46d9-badc-8a0243f47482",
+    "question": "What team was LeBron James drafted by in the 2003 NBA Draft?",
+    "answer": "13 July 1964",
+    "provenance_doc": {
+      "paragraphs": [
+        {
+          "wikipedia_title": "Dwyane Wade",
+          "paragraph_id": 0,
+          "text": "Dwyane Wade is a former professional basketball player who played for the Chicago Bulls and wore jersey number 3."
+        }
+      ]
+    },
+    "model_response": "The Cleveland Cavaliers.",
+    "model_provenance": {
+      "docs": [
+        {
+          "wikipedia_title": "2003 NBA draft"
+        },
+        {
+          "wikipedia_title": "2003\u201304 Cleveland Cavaliers season"
+        },
+        {
+          "wikipedia_title": "LeBron James"
+        },
+        {
+          "wikipedia_title": "James Jones (basketball player)"
+        },
+        {
+          "wikipedia_title": "Cleveland Cavaliers"
+        },
+        {
+          "wikipedia_title": "J. R. Smith"
+        },
+        {
+          "wikipedia_title": "2014\u201315 Cleveland Cavaliers season"
+        },
+        {
+          "wikipedia_title": "2014 NBA draft"
+        },
+        {
+          "wikipedia_title": "2015 NBA draft"
+        },
+        {
+          "wikipedia_title": "2009 NBA draft"
+        },
+        {
+          "wikipedia_title": "2004 NBA draft"
+        },
+        {
+          "wikipedia_title": "Big Three (Miami Heat)"
+        },
+        {
+          "wikipedia_title": "2014\u201315 NBA season"
+        },
+        {
+          "wikipedia_title": "The Decision (TV program)"
+        },
+        {
+          "wikipedia_title": "2003\u201304 Detroit Pistons season"
+        },
+        {
+          "wikipedia_title": "2006\u201307 Cleveland Cavaliers season"
+        },
+        {
+          "wikipedia_title": "2004 NBA expansion draft"
+        },
+        {
+          "wikipedia_title": "James Young (basketball)"
+        },
+        {
+          "wikipedia_title": "1983 NBA draft"
+        },
+        {
+          "wikipedia_title": "2010\u201311 Cleveland Cavaliers season"
+        }
+      ]
+    }
+  }
+]

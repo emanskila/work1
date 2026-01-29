@@ -1,0 +1,79 @@
+{
+  "id": "1-10015132-7",
+  "page_title": "Toronto Raptors all-time roster",
+  "section_title": "G",
+  "caption": "G",
+  "doc": {
+    "id": "1-10015132-7",
+    "name": "table_10015132_7",
+    "rows": [
+      [
+        "Sundiata Gaines",
+        2,
+        "United States",
+        "Guard",
+        "2011",
+        "Georgia"
+      ],
+      [
+        "Jorge Garbajosa",
+        15,
+        "Spain",
+        "Forward",
+        "2006-08",
+        "CB Málaga (Spain)"
+      ],
+      [
+        "Chris Garner",
+        0,
+        "United States",
+        "Guard",
+        "1997-98",
+        "Memphis"
+      ],
+      [
+        "Rudy Gay",
+        22,
+        "United States",
+        "Forward",
+        "2013-present",
+        "Connecticut"
+      ],
+      [
+        "Dion Glover",
+        22,
+        "United States",
+        "Guard",
+        "2004",
+        "Georgia Tech"
+      ],
+      [
+        "Joey Graham",
+        14,
+        "United States",
+        "Guard-Forward",
+        "2005-09",
+        "Oklahoma State"
+      ]
+    ],
+    "types": [
+      "text",
+      "real",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Player",
+      "No.",
+      "Nationality",
+      "Position",
+      "Years in Toronto",
+      "School/Club Team"
+    ],
+    "caption": "G",
+    "page_title": "Toronto Raptors all-time roster",
+    "section_title": "G"
+  }
+}

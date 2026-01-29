@@ -1,0 +1,96 @@
+{
+  "id": "2-16555375-4",
+  "page_title": "Russell Westbrook",
+  "section_title": "Triple-doubles",
+  "caption": "Triple-doubles",
+  "doc": {
+    "id": "2-16555375-4",
+    "rows": [
+      [
+        "1",
+        "vs. Dallas Mavericks",
+        "W 96–87",
+        "17",
+        "10",
+        "10",
+        "2"
+      ],
+      [
+        "2",
+        "at Minnesota Timberwolves",
+        "W 109–107",
+        "22",
+        "10",
+        "14",
+        "2"
+      ],
+      [
+        "3",
+        "vs. Atlanta Hawks",
+        "W 103–94",
+        "23",
+        "10",
+        "10",
+        "2"
+      ],
+      [
+        "4",
+        "vs. Orlando Magic",
+        "W 125–124",
+        "32",
+        "10",
+        "13",
+        "1"
+      ],
+      [
+        "5",
+        "vs. Washington Wizards",
+        "W 124–117",
+        "35",
+        "13",
+        "13",
+        "1"
+      ],
+      [
+        "6 ( PO )",
+        "vs. Memphis Grizzlies",
+        "W 105–90",
+        "14",
+        "10",
+        "14",
+        "0"
+      ],
+      [
+        "7",
+        "vs. Milwaukee Bucks",
+        "W 109-99",
+        "23",
+        "13",
+        "10",
+        "3"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "real",
+      "real",
+      "real",
+      "real"
+    ],
+    "header": [
+      "Number",
+      "Opponent",
+      "Box Score",
+      "Points",
+      "Rebounds",
+      "Assists",
+      "Steals"
+    ],
+    "caption": "Triple-doubles",
+    "page_id": 16555375,
+    "page_title": "Russell Westbrook",
+    "section_title": "Triple-doubles"
+  }
+}

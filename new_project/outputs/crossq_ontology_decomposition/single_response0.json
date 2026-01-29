@@ -1,0 +1,49 @@
+[
+  {
+    "qid": "Q_SINGLE",
+    "question": "Which teams did the players selected by the Toronto Huskies in the 1947 BAA later play for?",
+    "model": "gpt-4o-mini",
+    "parsed": {
+      "reasoning_path": [
+        "SQ1",
+        "SQ2"
+      ],
+      "subquestions": [
+        {
+          "sqid": "SQ1",
+          "question": "Which players were drafted by the Toronto Huskies?",
+          "input_concept": [
+            "team",
+            "Toronto Huskies"
+          ],
+          "output_concept": "player",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "draftby",
+                "direction": "reverse"
+              }
+            ]
+          }
+        },
+        {
+          "sqid": "SQ2",
+          "question": "Which teams did those players later play for?",
+          "input_concept": [
+            "player",
+            ""
+          ],
+          "output_concept": "team",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "playfor",
+                "direction": "forward"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "id": "2-17344644-1",
+  "page_title": "1987–88 Boston Celtics season",
+  "section_title": "Draft picks",
+  "caption": "Draft picks",
+  "doc": {
+    "id": "2-17344644-1",
+    "rows": [
+      [
+        "1",
+        "22",
+        "Reggie Lewis",
+        "United States",
+        "Northeastern"
+      ],
+      [
+        "2",
+        "45",
+        "Brad Lohaus",
+        "United States",
+        "Iowa"
+      ],
+      [
+        "4",
+        "70",
+        "Tom Sheehey",
+        "United States",
+        "Virginia"
+      ],
+      [
+        "4",
+        "91",
+        "Darryl Kennedy",
+        "United States",
+        "Oklahoma"
+      ],
+      [
+        "5",
+        "114",
+        "David Butler",
+        "United States",
+        "California"
+      ],
+      [
+        "6",
+        "137",
+        "Tim Naegeli",
+        "United States",
+        "Wisconsin–Stevens Point"
+      ],
+      [
+        "7",
+        "160",
+        "Jerry Corcoran",
+        "United States",
+        "Northeastern"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Nationality",
+      "College"
+    ],
+    "caption": "Draft picks",
+    "page_id": 17344644,
+    "page_title": "1987–88 Boston Celtics season",
+    "section_title": "Draft picks"
+  }
+}

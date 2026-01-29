@@ -1,0 +1,45 @@
+[
+  {
+    "qid": "f1403599-09bb-441a-840d-8d68b964783d",
+    "question": "In which American city do the 'Wizards' play Basketball?",
+    "answer": "Yes",
+    "provenance_table": {
+      "table": "t_1_11545282_10",
+      "column": "['years for jazz', 'player', 'nationality']"
+    },
+    "model_response": "The Washington Wizards play basketball in Washington, D.C.",
+    "model_provenance": {
+      "tables": {
+        "retrieved": [
+          "t_2_17311812_8",
+          "t_2_17311812_7",
+          "t_1_23274514_9",
+          "t_1_23274514_8",
+          "t_1_23274514_7",
+          "t_1_23274514_5",
+          "t_1_23274514_4",
+          "t_1_23274514_6",
+          "t_1_27721131_8",
+          "t_1_17311812_8",
+          "t_1_17311812_7",
+          "t_2_17311812_9",
+          "t_1_27721131_11",
+          "t_1_27721131_7",
+          "t_1_27721131_2",
+          "t_2_11962021_9",
+          "t_1_27721131_6",
+          "t_1_27721131_10",
+          "t_2_17311812_6",
+          "t_2_17311812_5"
+        ],
+        "sql": "SELECT DISTINCT location FROM t_2_17311812_8 WHERE team = 'Wizards';",
+        "sql_columns": [
+          "team"
+        ],
+        "sql_tables": [
+          "t_2_17311812_8"
+        ]
+      }
+    }
+  }
+]

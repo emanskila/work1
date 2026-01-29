@@ -1,0 +1,25 @@
+{
+  "source": {
+    "type": "sql",
+    "base_dir": "data/new_follow_ontology/table"
+  },
+  "concept_mappings": {
+    "game": {
+      "path": "game"
+    }
+  },
+  "relation_mappings": {
+    "playfor": {
+      "path": "relation_playfor"
+    },
+    "draftby": {
+      "path": "relation_draftby"
+    },
+    "receive": {
+      "path": "relation_receive"
+    },
+    "performance": {
+      "path": "relation_performance"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "2-13746919-5",
+  "page_title": "1993–94 Houston Rockets season",
+  "section_title": "Series Summary",
+  "caption": "Series Summary",
+  "doc": {
+    "id": "2-13746919-5",
+    "rows": [
+      [
+        "Game 1",
+        "June 8",
+        "Houston",
+        "85-78",
+        "New York"
+      ],
+      [
+        "Game 2",
+        "June 10",
+        "Houston",
+        "83-91",
+        "New York"
+      ],
+      [
+        "Game 3",
+        "June 12",
+        "New York",
+        "89-93",
+        "Houston"
+      ],
+      [
+        "Game 4",
+        "June 15",
+        "New York",
+        "91-82",
+        "Houston"
+      ],
+      [
+        "Game 5",
+        "June 17",
+        "New York",
+        "91-84",
+        "Houston"
+      ],
+      [
+        "Game 6",
+        "June 19",
+        "Houston",
+        "86-84",
+        "New York"
+      ],
+      [
+        "Game 7",
+        "June 22",
+        "Houston",
+        "90-84",
+        "New York"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Game",
+      "Date",
+      "Home Team",
+      "Result",
+      "Road Team"
+    ],
+    "caption": "Series Summary",
+    "page_id": 13746919,
+    "page_title": "1993–94 Houston Rockets season",
+    "section_title": "Series Summary"
+  }
+}

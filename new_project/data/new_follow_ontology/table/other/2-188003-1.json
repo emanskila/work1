@@ -1,0 +1,64 @@
+{
+  "id": "2-188003-1",
+  "page_title": "WPXN-TV",
+  "section_title": "Digital channels",
+  "caption": "Digital channels",
+  "doc": {
+    "id": "2-188003-1",
+    "rows": [
+      [
+        "31.1",
+        "720p",
+        "16:9",
+        "ION",
+        "Ion Television"
+      ],
+      [
+        "31.2",
+        "480i",
+        "4:3",
+        "qubo",
+        "qubo"
+      ],
+      [
+        "31.3",
+        "480i",
+        "4:3",
+        "IONLife",
+        "Ion Life"
+      ],
+      [
+        "31.4",
+        "480i",
+        "4:3",
+        "Shop",
+        "Ion Shop"
+      ],
+      [
+        "31.5",
+        "480i",
+        "4:3",
+        "QVC",
+        "QVC"
+      ]
+    ],
+    "types": [
+      "real",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Channel",
+      "Video",
+      "Aspect",
+      "PSIP Short Name",
+      "Network"
+    ],
+    "caption": "Digital channels",
+    "page_id": 188003,
+    "page_title": "WPXN-TV",
+    "section_title": "Digital channels"
+  }
+}

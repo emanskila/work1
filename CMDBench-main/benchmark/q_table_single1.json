@@ -1,0 +1,11 @@
+[
+  {
+    "qid": "f1403599-09bb-441a-840d-8d68b964783d",
+    "question": "In which American city do the 'Wizards' play Basketball?",
+    "answer": "Yes",
+    "provenance_table": {
+      "table": "t_1_11545282_10",
+      "column": "['years for jazz', 'player', 'nationality']"
+    }
+  }
+]

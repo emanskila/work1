@@ -1,0 +1,113 @@
+{
+  "id": "2-14828562-1",
+  "page_title": "1984–85 Philadelphia 76ers season",
+  "section_title": "NBA Draft",
+  "caption": "NBA Draft",
+  "doc": {
+    "id": "2-14828562-1",
+    "rows": [
+      [
+        "1",
+        "5",
+        "Charles Barkley",
+        "United States",
+        "Auburn"
+      ],
+      [
+        "1",
+        "10",
+        "Leon Wood",
+        "United States",
+        "California State-Fullerton"
+      ],
+      [
+        "1",
+        "22",
+        "Tom Sewell",
+        "United States",
+        "Lamar"
+      ],
+      [
+        "3",
+        "48",
+        "James Banks",
+        "United States",
+        "Georgia"
+      ],
+      [
+        "3",
+        "68",
+        "Butch Graves",
+        "United States",
+        "Yale"
+      ],
+      [
+        "4",
+        "91",
+        "Earl Harrison",
+        "United States",
+        "Morehead State"
+      ],
+      [
+        "5",
+        "114",
+        "Dan Federman",
+        "United States",
+        "Tennessee"
+      ],
+      [
+        "6",
+        "137",
+        "Gary Springer",
+        "United States",
+        "Iona"
+      ],
+      [
+        "7",
+        "160",
+        "Rich Congo",
+        "United States",
+        "Drexel"
+      ],
+      [
+        "8",
+        "183",
+        "Franks Dobbs",
+        "United States",
+        "Villanova"
+      ],
+      [
+        "9",
+        "205",
+        "Michael Mitchell",
+        "United States",
+        "Drexel"
+      ],
+      [
+        "10",
+        "227",
+        "Martin Clark",
+        "United States",
+        "Boston College"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Nationality",
+      "College"
+    ],
+    "caption": "NBA Draft",
+    "page_id": 14828562,
+    "page_title": "1984–85 Philadelphia 76ers season",
+    "section_title": "NBA Draft"
+  }
+}

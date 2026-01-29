@@ -1,0 +1,32 @@
+[
+  {
+    "qid": "f1403599-09bb-441a-840d-8d68b964783d",
+    "question": "Is Robert Smith a member of Utah Jazz?",
+    "answer": "yes",
+    "provenance_graph": {
+      "cypher": "MATCH (p:Player {name: 'Robert Smith'})-[r:playsFor]->(t:Team {name: 'Utah Jazz'}) RETURN p.name",
+      "node_ids": [
+        5232,
+        141
+      ],
+      "edge_ids": [
+        4807
+      ],
+      "type": "path"
+    },
+    "model_response": "Yes, Robert Smith is a member of the Utah Jazz.",
+    "model_provenance": {
+      "graph": {
+        "cypher": "MATCH (p:Player {name: 'Robert Smith'})-[r:playsFor]->(t:Team {name: 'Utah Jazz'}) RETURN p.name",
+        "graph_str": "[{'p.name': 'Robert Smith'}]",
+        "node_ids": [
+          2428,
+          1389
+        ],
+        "edge_ids": [
+          11489
+        ]
+      }
+    }
+  }
+]

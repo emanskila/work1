@@ -1,0 +1,79 @@
+{
+  "id": "2-17292548-2",
+  "page_title": "1988–89 Miami Heat season",
+  "section_title": "Draft picks",
+  "caption": "Draft picks",
+  "doc": {
+    "id": "2-17292548-2",
+    "rows": [
+      [
+        "1",
+        "9",
+        "Rony Seikaly",
+        "C",
+        "Lebanon",
+        "Syracuse"
+      ],
+      [
+        "1",
+        "20",
+        "Kevin Edwards",
+        "SG",
+        "United States",
+        "DePaul"
+      ],
+      [
+        "2",
+        "33",
+        "Grant Long",
+        "PF",
+        "United States",
+        "Eastern Michigan"
+      ],
+      [
+        "2",
+        "35",
+        "Sylvester Gray",
+        "F",
+        "United States",
+        "Memphis"
+      ],
+      [
+        "2",
+        "40",
+        "Orlando Graham",
+        "F",
+        "United States",
+        "Auburn-Montgomery"
+      ],
+      [
+        "3",
+        "59",
+        "Nate Johnston",
+        "F",
+        "United States",
+        "Tampa"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Position",
+      "Nationality",
+      "School/Club Team"
+    ],
+    "caption": "Draft picks",
+    "page_id": 17292548,
+    "page_title": "1988–89 Miami Heat season",
+    "section_title": "Draft picks"
+  }
+}

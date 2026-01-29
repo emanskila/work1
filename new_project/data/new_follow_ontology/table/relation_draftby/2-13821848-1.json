@@ -1,0 +1,71 @@
+{
+  "id": "2-13821848-1",
+  "page_title": "1985–86 Boston Celtics season",
+  "section_title": "NBA Draft",
+  "caption": "NBA Draft",
+  "doc": {
+    "id": "2-13821848-1",
+    "rows": [
+      [
+        "1",
+        "20",
+        "Sam Vincent",
+        "United States",
+        "Michigan State"
+      ],
+      [
+        "3",
+        "70",
+        "Andre Battle",
+        "United States",
+        "Loyola (IL)"
+      ],
+      [
+        "4",
+        "93",
+        "Cliff Webber",
+        "United States",
+        "Liberty Baptist"
+      ],
+      [
+        "5",
+        "116",
+        "Albert Butts",
+        "United States",
+        "La Salle"
+      ],
+      [
+        "6",
+        "139",
+        "Ralph Lewis",
+        "United States",
+        "La Salle"
+      ],
+      [
+        "7",
+        "162",
+        "Chris Remly",
+        "United States",
+        "Rutgers"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Nationality",
+      "School/Club Team"
+    ],
+    "caption": "NBA Draft",
+    "page_id": 13821848,
+    "page_title": "1985–86 Boston Celtics season",
+    "section_title": "NBA Draft"
+  }
+}

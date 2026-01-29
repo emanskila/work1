@@ -1,0 +1,79 @@
+{
+  "id": "2-17064870-3",
+  "page_title": "1974–75 Buffalo Braves season",
+  "section_title": "Season schedule",
+  "caption": "Season schedule",
+  "doc": {
+    "id": "2-17064870-3",
+    "rows": [
+      [
+        "1",
+        "October 18",
+        "@ Boston Celtics",
+        "126–119",
+        "1–0",
+        "Win 1"
+      ],
+      [
+        "2",
+        "October 19",
+        "Boston Celtics",
+        "95–113",
+        "1–1",
+        "Loss 1"
+      ],
+      [
+        "3",
+        "October 22",
+        "New Orleans Jazz",
+        "134–118",
+        "2–1",
+        "Win 1"
+      ],
+      [
+        "4",
+        "October 24",
+        "New York Knicks (at Toronto, Canada)",
+        "111–91",
+        "3–1",
+        "Win 2"
+      ],
+      [
+        "5",
+        "October 26",
+        "Chicago Bulls",
+        "105–104",
+        "4–1",
+        "Win 3"
+      ],
+      [
+        "6",
+        "October 29",
+        "@ Golden State Warriors",
+        "101–130",
+        "4–2",
+        "Loss 1"
+      ]
+    ],
+    "types": [
+      "real",
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Game",
+      "Date",
+      "Team",
+      "Score",
+      "Record",
+      "Streak"
+    ],
+    "caption": "Season schedule",
+    "page_id": 17064870,
+    "page_title": "1974–75 Buffalo Braves season",
+    "section_title": "Season schedule"
+  }
+}

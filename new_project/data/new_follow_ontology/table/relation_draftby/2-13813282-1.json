@@ -1,0 +1,64 @@
+{
+  "id": "2-13813282-1",
+  "page_title": "1978–79 Seattle SuperSonics season",
+  "section_title": "Draft picks",
+  "caption": "Draft picks",
+  "doc": {
+    "id": "2-13813282-1",
+    "rows": [
+      [
+        "2",
+        "39",
+        "James Lee",
+        "United States",
+        "Kentucky"
+      ],
+      [
+        "2",
+        "42",
+        "Kevin McDonald",
+        "United States",
+        "Pennsylvania"
+      ],
+      [
+        "3",
+        "61",
+        "Dave Baxter",
+        "United States",
+        "Michigan"
+      ],
+      [
+        "4",
+        "83",
+        "Billy Lewis",
+        "United States",
+        "Illinois State University"
+      ],
+      [
+        "5",
+        "105",
+        "Ralph Drollinger",
+        "United States",
+        "UCLA"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Nationality",
+      "School/Club Team"
+    ],
+    "caption": "Draft picks",
+    "page_id": 13813282,
+    "page_title": "1978–79 Seattle SuperSonics season",
+    "section_title": "Draft picks"
+  }
+}

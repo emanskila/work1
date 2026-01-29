@@ -1,0 +1,71 @@
+{
+  "id": "1-16494599-5",
+  "page_title": "Memphis Grizzlies all-time roster",
+  "section_title": "E",
+  "caption": "E",
+  "doc": {
+    "id": "1-16494599-5",
+    "name": "table_16494599_5",
+    "rows": [
+      [
+        "Blue Edwards",
+        30,
+        "United States",
+        "Shooting guard",
+        "1995-1998",
+        "East Carolina"
+      ],
+      [
+        "Doug Edwards",
+        32,
+        "United States",
+        "Small forward",
+        "1995-1996",
+        "Florida State"
+      ],
+      [
+        "Kevin Edwards",
+        21,
+        "United States",
+        "Shooting guard",
+        "2000-2001",
+        "DePaul"
+      ],
+      [
+        "Obinna Ekezie",
+        54,
+        "Nigeria",
+        "Power forward / Center",
+        "1999-2000",
+        "Maryland"
+      ],
+      [
+        "Andre Emmett",
+        14,
+        "United States",
+        "Guard-Forward",
+        "2004-2005",
+        "Texas Tech"
+      ]
+    ],
+    "types": [
+      "text",
+      "real",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Player",
+      "No.",
+      "Nationality",
+      "Position",
+      "Years for Grizzlies",
+      "School/Club Team"
+    ],
+    "caption": "E",
+    "page_title": "Memphis Grizzlies all-time roster",
+    "section_title": "E"
+  }
+}

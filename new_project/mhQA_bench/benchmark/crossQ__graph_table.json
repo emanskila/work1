@@ -1,0 +1,2122 @@
+[
+  {
+    "qid": "Q1",
+    "question": "Which teams did the players selected by the Toronto Huskies in the 1947 BAA later play for?",
+    "answer": "New York Knicks, Baltimore Bullets, Detroit Pistons",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who were the players selected by the Toronto Huskies in the 1947 BAA?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_12093318_3",
+            "line": "1",
+            "evidence": [
+              {
+                "line": ["2"],
+                "column": "Player"
+              }
+            ],
+            "answer": ["Glen Selbo"]
+          },
+          {
+            "modality": "table",
+            "source": "t_2_12093318_4",
+            "evidence": [
+              {
+                "line": ["9", "21"],
+                "column": "Player"
+              }
+            ],
+            "answer": ["Paul Hoffman", "Red Rocha"]
+          }
+        ],
+        "sq_answer": ["Clifton McNeely", "Paul Hoffman", "Red Rocha"]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Which teams did the player play for?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "player",
+            "answer": ["Q2438533", "Q1622629", "Q2328645"]
+          },
+          {
+            "modality": "graph",
+            "source": "playfor",
+            "answer": ["Q131364", "Q2928124", "Detroit Pistons"]
+          },
+          {
+            "modality": "graph",
+            "source": "team",
+            "answer": ["New York Knicks", "Baltimore Bullets", "Detroit Pistons"]
+          }
+        ],
+        "sq_answer": ["New York Knicks", "Baltimore Bullets", "Detroit Pistons"]
+      }
+    ],
+    "hop": 2,
+    "type": ["fact", "filter"]
+  },
+  {
+    "qid": "Q2",
+    "question": "How did John Havlicek's team perform (win/loss) in the 1963 NBA Finals?",
+    "answer": "4:1 Boston CelticsdefeatedSan Francisco",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Which team did John Havlicek play for?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "from graph: ",
+            "evidence": [
+              {
+                "text": "from graph: "
+              },
+              {
+                "text": "player node"
+              },
+              {
+                "text": "Q71127,John Havlicek"
+              },
+              {
+                "text": "player node—playfor-->team node"
+              },
+              {
+                "text": "Q71127,Q131371,1962,1977,,"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q131371,Boston Celtics,Boston Celtics,1946,"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "How did the team perform in the 1963 NBA Finals?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17063996_4",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "from Table2-17063996-4, filterResult=loss, first row"
+              },
+              {
+                "text": "4:1 Boston CelticsdefeatedSan Francisco"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "4:1 Boston CelticsdefeatedSan Francisco",
+      "operations": [],
+      "final_answer": "4:1 Boston CelticsdefeatedSan Francisco"
+    }
+  },
+  {
+    "qid": "Q3",
+    "question": "In the 1968 playoffs, the Atlanta Hawks lost to a team led by which coach?",
+    "answer": "--> New York Knicks4: 3won the match",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "In the 1968 playoffs, which team did the Atlanta Hawks lose to? (This seems hard to answer with simple NL2SQL.)",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_18409087_10",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From 2-18409087-10"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Who is the coach of that team?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "from graph: ",
+            "evidence": [
+              {
+                "text": "from graph: "
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q121783,Los Angeles Lakers,Los Angeles Lakers,1946; 1947,Jeanie Buss(fuzzy match)"
+              },
+              {
+                "text": "team node—coachedby-->ccoach node"
+              },
+              {
+                "text": "Q121783,Q2500405 --> Darvin Ham"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ3",
+        "sq": "Walt Frazier served as a point guard; how did his team perform in the 1969 NBA Finals?",
+        "sources": [],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ4",
+        "sq": "For which team did Walt Frazier play as a point guard?",
+        "sources": [],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ5",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q348696,Walt Frazier,"
+              },
+              {
+                "text": "Player—playfor-->team"
+              },
+              {
+                "text": "Q348696,Q131364,1967,1977,10,point guard"
+              },
+              {
+                "text": "Q348696,Q162990,,,,×"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ6",
+        "sq": "How did the team perform in the 1969 NBA Finals?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15148390_10",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-15148390-10"
+              },
+              {
+                "text": "--> New York Knicks4: 3won the match"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 6,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ2",
+        "to": "SQ3",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ3",
+        "to": "SQ4",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ4",
+        "to": "SQ5",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ5",
+        "to": "SQ6",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "--> New York Knicks4: 3won the match",
+      "operations": [],
+      "final_answer": "--> New York Knicks4: 3won the match"
+    }
+  },
+  {
+    "qid": "Q5",
+    "question": "How many games did the team founded by Peter Holt play in October 1976?",
+    "answer": "Which team was founded by Peter Holt?",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q159729,San Antonio Spurs,San Antonio Spurs,1967,Peter Holt"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "How many games did the team play in October 1976?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_16386910_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table 2-16386910-2"
+              },
+              {
+                "text": "6 games (count)"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Which team was founded by Peter Holt?",
+      "operations": [],
+      "final_answer": "Which team was founded by Peter Holt?"
+    }
+  },
+  {
+    "qid": "Q6",
+    "question": "In the 1992 season overview, where does the opponent of the Chicago Bulls train regularly?",
+    "answer": "Q1538690,Footprint Center,Footprint Center",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "In the 1992 season overview, who was the opponent of the Chicago Bulls?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_13618767_5",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table 2-13618767-5"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Where does the team train regularly?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver(fuzzy match)"
+              },
+              {
+                "text": "Team—hashomevenue-->Venue"
+              },
+              {
+                "text": "Q164177,Q670890,1968,1992"
+              },
+              {
+                "text": "Q164177,Q1538690,1992,"
+              },
+              {
+                "text": "Venue node"
+              },
+              {
+                "text": "Q1538690,Footprint Center,Footprint Center"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q1538690,Footprint Center,Footprint Center",
+      "operations": [],
+      "final_answer": "Q1538690,Footprint Center,Footprint Center"
+    }
+  },
+  {
+    "qid": "Q7",
+    "question": "In the 2001 NBA All-Star Game, did the player from the Vancouver Grizzlies receive any honors?",
+    "answer": "Q7569437,Southeastern Conference Men's Basketball Player of the Year,Southeastern Conference Men%27s Basketball Player of the Year",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "In the 2001 NBA All-Star Game, who was from the Vancouver Grizzlies?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_12498087_5",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "from Table 2-12498087-5row 4"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "What awards has the player received?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q716062,Stromile Swift,"
+              },
+              {
+                "text": "Player—recieveaward-->award"
+              },
+              {
+                "text": "Q716062,Q7569437,"
+              },
+              {
+                "text": "Award node"
+              },
+              {
+                "text": "Q7569437,Southeastern Conference Men's Basketball Player of the Year,Southeastern Conference Men%27s Basketball Player of the Year"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q7569437,Southeastern Conference Men's Basketball Player of the Year,Southeastern Conference Men%27s Basketball Player of the Year",
+      "operations": [],
+      "final_answer": "Q7569437,Southeastern Conference Men's Basketball Player of the Year,Southeastern Conference Men%27s Basketball Player of the Year"
+    }
+  },
+  {
+    "qid": "Q8",
+    "question": "In the 2010 NBA All-Star Game Three-Point Contest, what awards has the player from the Denver Nuggets won?",
+    "answer": "Q298531,Q1501719,2008—> Q1501719,J. Walter Kennedy Citizenship Award,J. Walter Kennedy Citizenship Award",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "In the 2010 NBA All-Star Game Three-Point Contest, who was the player from the Denver Nuggets?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15753220_7",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table 2-15753220-7row 3"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "What awards has he won?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q298531,Chauncey Billups,"
+              },
+              {
+                "text": "Player—recieveaward-->award: "
+              },
+              {
+                "text": "Q298531,Q1418596,2009--> Q1418596,NBA Sportsmanship Award,NBA Sportsmanship Award"
+              },
+              {
+                "text": "Q298531,Q13425905,2013--> Q13425905,Twyman–Stokes Teammate of the Year Award,Twyman%E2%80%93Stokes Teammate of the Year Award"
+              },
+              {
+                "text": "Q298531,Q739499,2004--> Q739499,Bill Russell NBA Finals Most Valuable Player Award,NBA Finals Most Valuable Player award"
+              },
+              {
+                "text": "Q298531,Q1501719,2008—> Q1501719,J. Walter Kennedy Citizenship Award,J. Walter Kennedy Citizenship Award"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q298531,Q1501719,2008—> Q1501719,J. Walter Kennedy Citizenship Award,J. Walter Kennedy Citizenship Award",
+      "operations": [],
+      "final_answer": "Q298531,Q1501719,2008—> Q1501719,J. Walter Kennedy Citizenship Award,J. Walter Kennedy Citizenship Award"
+    }
+  },
+  {
+    "qid": "Q9",
+    "question": "Who is the coach of the player with the highest accuracy in the 2010 NBA All-Star Game Three-Point Contest?",
+    "answer": "Q4954288,Brad Stevens,Brad Stevens,United States of America,Indianapolis,English,male,22 October 1976,,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who was the player with the highest accuracy in the 2010 NBA All-Star Game Three-Point Contest?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15753220_7",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table 2-15753220-7row 1"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Who is his (team's) coach?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q131371,Boston Celtics,Boston Celtics,1946,"
+              },
+              {
+                "text": "Team—coach-->coach: "
+              },
+              {
+                "text": "Q131371,Q4954288"
+              },
+              {
+                "text": "Q4954288,Brad Stevens,Brad Stevens,United States of America,Indianapolis,English,male,22 October 1976,,"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q4954288,Brad Stevens,Brad Stevens,United States of America,Indianapolis,English,male,22 October 1976,,",
+      "operations": [],
+      "final_answer": "Q4954288,Brad Stevens,Brad Stevens,United States of America,Indianapolis,English,male,22 October 1976,,"
+    }
+  },
+  {
+    "qid": "Q10",
+    "question": "Which teams did the player who won the Adolph Rupp Trophy for three consecutive years later play for?",
+    "answer": "Q976396,Los Angeles Clippers,Los Angeles Clippers,1970,Los Angeles Lakers; Steve Ballmer",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who won the first Adolph Rupp Trophy?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_1676727_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-1676727-2 rows 1, 2, and 3"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Which teams did he play for?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q363246,Bill Walton"
+              },
+              {
+                "text": "Player—playfor-->team"
+              },
+              {
+                "text": "Q363246,Q131371,,,,"
+              },
+              {
+                "text": "Q363246,Q167253,,,,"
+              },
+              {
+                "text": "Q363246,Q976396,,,,"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q131371,Boston Celtics,Boston Celtics,1946,"
+              },
+              {
+                "text": "Q167253,Portland Trail Blazers,Portland Trail Blazers,1970,Paul Allen"
+              },
+              {
+                "text": "Q976396,Los Angeles Clippers,Los Angeles Clippers,1970,Los Angeles Lakers; Steve Ballmer"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q976396,Los Angeles Clippers,Los Angeles Clippers,1970,Los Angeles Lakers; Steve Ballmer",
+      "operations": [],
+      "final_answer": "Q976396,Los Angeles Clippers,Los Angeles Clippers,1970,Los Angeles Lakers; Steve Ballmer"
+    }
+  },
+  {
+    "qid": "Q11",
+    "question": "In the early 20th century, which hosts did the coach who won the North Carolina Sports Hall of Fame award in 1998 work with as a guest (color commentator) to comment on Boston Celtics TV broadcasts?",
+    "answer": "Q555100,Cedric Maxwell",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who received the North Carolina Sports Hall of Fame award in 1998?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Award node"
+              },
+              {
+                "text": "Q41628143,North Carolina Sports Hall of Fame,"
+              },
+              {
+                "text": "Player—recieveaward-->award: "
+              },
+              {
+                "text": "Q555100,Q41628143,1998"
+              },
+              {
+                "text": "Q2326948,Q41628143,1998"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Is this person also a coach?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player—assameas-->coach: "
+              },
+              {
+                "text": "Q555100,Q555100"
+              },
+              {
+                "text": "Player node:"
+              },
+              {
+                "text": "Q555100,Cedric Maxwell"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ3",
+        "sq": "How many Boston Celtics TV broadcasts did this person commentate on?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_14902507_8",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-14902507-8all"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 3,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ2",
+        "to": "SQ3",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q555100,Cedric Maxwell",
+      "operations": [],
+      "final_answer": "Q555100,Cedric Maxwell"
+    }
+  },
+  {
+    "qid": "Q12",
+    "question": "What position does the Cleveland Cavaliers player who won the Best Breakthrough Athlete ESPY Award play?",
+    "answer": "Q212413,point guard,Point guard",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who is the Cleveland Cavaliers player who won the Best Breakthrough Athlete ESPY Award?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_10540109_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-10540109-1row 12(can also be retrieved in the graph database)"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "What is the player's position?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q36159,LeBron James"
+              },
+              {
+                "text": "Player—playsposition-->position: "
+              },
+              {
+                "text": "Q36159,Q212413"
+              },
+              {
+                "text": "Position node"
+              },
+              {
+                "text": "Q212413,point guard,Point guard"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q212413,point guard,Point guard",
+      "operations": [],
+      "final_answer": "Q212413,point guard,Point guard"
+    }
+  },
+  {
+    "qid": "Q13",
+    "question": "Who is the coach of the team that won the Best NBA Player ESPY Award three consecutive times?",
+    "answer": "Q580808,Fred Hoiberg",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Which team won the Best NBA Player ESPY Award three consecutive times?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_10540109_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-10540109-1all, count"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Who is the coach of the team?",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Team node:",
+          "Q128109,Chicago Bulls,Chicago Bulls,1966,Dick Klein; Jerry Reinsdorf",
+          "Team—coachedby-->coach: ",
+          "Q128109,Q580808",
+          "Coach node:",
+          "Q580808,Fred Hoiberg"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q580808,Fred Hoiberg",
+      "operations": [],
+      "final_answer": "Q580808,Fred Hoiberg"
+    }
+  },
+  {
+    "qid": "Q14",
+    "question": "What is the highest cumulative shooting percentage in the NBA Finals' 3pt record for Danny, who was drafted by the Cleveland Cavaliers?",
+    "answer": "Q555436,Q162990,(√)",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who is Danny?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "from graph",
+            "evidence": [
+              {
+                "text": "from graph"
+              },
+              {
+                "text": "player node(multiple candidates)"
+              },
+              {
+                "text": "Q555436,Danny Green,"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Was he drafted by the Cleveland Cavaliers? (filter)",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Q555436,Q162990,(√)"
+        ]
+      },
+      {
+        "sqid": "SQ3",
+        "sq": "What is this player's highest cumulative shooting percentage in the NBA Finals' 3pt record?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17107550_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-17107550-1(sort by attribute)"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 3,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ2",
+        "to": "SQ3",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q555436,Q162990,(√)",
+      "operations": [],
+      "final_answer": "Q555436,Q162990,(√)"
+    }
+  },
+  {
+    "qid": "Q15_D",
+    "question": "How did the team coached by Darvin Ham perform in Game 7 of the 1988 NBA Finals?",
+    "answer": "Q121783,Los Angeles Lakers",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Which team is coached by Darvin Ham?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Coach node"
+              },
+              {
+                "text": "Q2500405,Darvin Ham,"
+              },
+              {
+                "text": "Team—coachedby-->coach: "
+              },
+              {
+                "text": "Q121783,Q2500405"
+              },
+              {
+                "text": "Team node:"
+              },
+              {
+                "text": "Q121783,Los Angeles Lakers"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15664872_5",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-15664872-5 row 14"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q121783,Los Angeles Lakers",
+      "operations": [],
+      "final_answer": "Q121783,Los Angeles Lakers"
+    }
+  },
+  {
+    "qid": "Q16_D",
+    "question": "What was Hakim Warrick's rebounds per game in the season he was drafted?",
+    "answer": "Q165529,Memphis Grizzlies,Memphis Grizzlies,1995,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "In which year was Hakim Warrick drafted?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q1264436,Hakim Warrick,-->(attribute: career start year: 2005)"
+              },
+              {
+                "text": "Player—draftedby-->team"
+              },
+              {
+                "text": "Q1264436,Q165529,"
+              },
+              {
+                "text": "Team node:"
+              },
+              {
+                "text": "Q165529,Memphis Grizzlies,Memphis Grizzlies,1995,"
+              }
+            ],
+            "answer": []
+          },
+          {
+            "modality": "table",
+            "source": "t_2_1684650_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-1684650-1row 4"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 1,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [],
+    "summary": {
+      "candidate_answer": "Q165529,Memphis Grizzlies,Memphis Grizzlies,1995,",
+      "operations": [],
+      "final_answer": "Q165529,Memphis Grizzlies,Memphis Grizzlies,1995,"
+    }
+  },
+  {
+    "qid": "Q17",
+    "question": "Did the #4 player with surname initial 'K' on the Houston Rockets win any awards during his tenure?",
+    "answer": "Q674359,All-NBA Team,All-NBA Team",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who is the #4 player with surname initial 'B' on the Houston Rockets?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_11734041_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-11734041-2row 5"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "What awards did he win during his tenure?",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Player node",
+          "Q192707,Charles Barkley,",
+          "Player—recieveaward-->award: ",
+          "Q192707,Q674359,1996",
+          "Award node:",
+          "Q674359,All-NBA Team,All-NBA Team"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q674359,All-NBA Team,All-NBA Team",
+      "operations": [],
+      "final_answer": "Q674359,All-NBA Team,All-NBA Team"
+    }
+  },
+  {
+    "qid": "Q18",
+    "question": "Did any member selected by the New York Knicks in the 1947 first round also serve as a coach?",
+    "answer": "(This graph-oriented query feels somewhat forced.)",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who was selected by the New York Knicks in the first round in 1947?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17269615_4",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-17269615-4first row"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Is the member also a coach?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q3706951,Dick Holub,"
+              },
+              {
+                "text": "Player—assameas-->coach"
+              },
+              {
+                "text": "Q3706951,Q3706951"
+              },
+              {
+                "text": "coach node"
+              },
+              {
+                "text": "Q3706951,Dick Holub,Dick Holub,United States of America,Racine,English,male,29 October 1921,1947,1952"
+              },
+              {
+                "text": "(This graph-oriented query feels somewhat forced.)"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "(This graph-oriented query feels somewhat forced.)",
+      "operations": [],
+      "final_answer": "(This graph-oriented query feels somewhat forced.)"
+    }
+  },
+  {
+    "qid": "Q19",
+    "question": "Which team did the first player selected by the Memphis Grizzlies in 1995 later play for?",
+    "answer": "Q3307390,Vancouver Grizzlies,Vancouver Grizzlies,1995,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who was the first player selected by the Memphis Grizzlies in 1995?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_16815697_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-16815697-2row 1"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Which team did the player later play for?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q2308704,Bryant Reeves,"
+              },
+              {
+                "text": "Player—playfor-->team"
+              },
+              {
+                "text": "Q2308704,Q3307390,1995,2001,,"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q3307390,Vancouver Grizzlies,Vancouver Grizzlies,1995,"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q3307390,Vancouver Grizzlies,Vancouver Grizzlies,1995,",
+      "operations": [],
+      "final_answer": "Q3307390,Vancouver Grizzlies,Vancouver Grizzlies,1995,"
+    }
+  },
+  {
+    "qid": "Q20",
+    "question": "What place did the team James Harden played for during 2010-2010 finish in the playoffs that season?",
+    "answer": "Q180950,Oklahoma City Thunder,Oklahoma City Thunder,2008; 1967,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Which team did James Harden play for (condition: 2010-2010 interval)?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q136678,James Harden,"
+              },
+              {
+                "text": "Player—playfor-->team"
+              },
+              {
+                "text": "Q136678,Q180950,11 July 2009,27 October 2012,13,shooting guard"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q180950,Oklahoma City Thunder,Oklahoma City Thunder,2008; 1967,"
+              }
+            ],
+            "answer": []
+          },
+          {
+            "modality": "table",
+            "source": "t_2_18256220_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-18256220-1row 2"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 1,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [],
+    "summary": {
+      "candidate_answer": "Q180950,Oklahoma City Thunder,Oklahoma City Thunder,2008; 1967,",
+      "operations": [],
+      "final_answer": "Q180950,Oklahoma City Thunder,Oklahoma City Thunder,2008; 1967,"
+    }
+  },
+  {
+    "qid": "Q21",
+    "question": "In the 1950 NBA draft, in which round was the player who won both the Pro Football Hall of Fame and the Canadian Football Hall of Fame selected?",
+    "answer": "Q970476,Bud Grant,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who is the player who won both the Pro Football Hall of Fame and the Canadian Football Hall of Fame?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Award node:"
+              },
+              {
+                "text": "Q778412,Pro Football Hall of Fame,Pro Football Hall of Fame"
+              },
+              {
+                "text": "Q3517653,Canadian Football Hall of Fame,Canadian Football Hall of Fame"
+              },
+              {
+                "text": "Player—recievedaward-->award: "
+              },
+              {
+                "text": "Q960594,Q778412,"
+              },
+              {
+                "text": "Q970476,Q778412,"
+              },
+              {
+                "text": "Q970476,Q3517653,"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q970476,Bud Grant,"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "In which round was the player selected in the 1950 NBA draft?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_11157130_4",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-11157130-4 row 8"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q970476,Bud Grant,",
+      "operations": [],
+      "final_answer": "Q970476,Bud Grant,"
+    }
+  },
+  {
+    "qid": "Q22",
+    "question": "Did the player selected 8th by the Charlotte Hornets in the 1988 NBA expansion draft later receive any honors?",
+    "answer": "Q918054,NBA Coach of the Year Award,NBA Coach of the Year Award",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who was the player corresponding to the Charlotte Hornets' 8th selection in the 1988 NBA expansion draft?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17116053_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-17116053-1 row 4"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "What honors did the player later receive?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q458065,Mike Brown,"
+              },
+              {
+                "text": "Player—recieveaward-->award"
+              },
+              {
+                "text": "Q458065,Q918054,2009"
+              },
+              {
+                "text": "Award node"
+              },
+              {
+                "text": "Q918054,NBA Coach of the Year Award,NBA Coach of the Year Award"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q918054,NBA Coach of the Year Award,NBA Coach of the Year Award",
+      "operations": [],
+      "final_answer": "Q918054,NBA Coach of the Year Award,NBA Coach of the Year Award"
+    }
+  },
+  {
+    "qid": "Q23",
+    "question": "In the season with the highest rebounds per game, which team was he playing for?",
+    "answer": "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Which year was the season with the highest rebounds per game?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_1_2387461_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table1-2387461-1row 3"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Which team did he play for? (condition: year)",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Player node",
+          "Q317527,Boris Diaw,",
+          "Player—playfor-->team",
+          "Q317527,Q164177,2005,2008,3,power forward",
+          "Team node",
+          "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver",
+      "operations": [],
+      "final_answer": "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver"
+    }
+  },
+  {
+    "qid": "Q23_D",
+    "question": "How many consecutive wins did the team coached by Erik Spoelstra have at its best stretch in the 1995 regular season?",
+    "answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Coach node"
+              },
+              {
+                "text": "Q440324,Erik Spoelstra,"
+              },
+              {
+                "text": "Team—coachedby-->coach"
+              },
+              {
+                "text": "Q169138,Q440324"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17292579_3",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-17292579-3row 14"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison",
+      "operations": [],
+      "final_answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison"
+    }
+  },
+  {
+    "qid": "Q25",
+    "question": "In the 2010 NBA All-Star Weekend Slam Dunk Contest, which team drafted the taller player from the Maine Red Claws?",
+    "answer": "Q169165,Washington Wizards,Washington Wizards,1961,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15753220_15",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-15753220-15row 5"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q547758,Bill Walker,"
+              },
+              {
+                "text": "Player—draftedby-->team"
+              },
+              {
+                "text": "Q547758,Q169165,"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q169165,Washington Wizards,Washington Wizards,1961,"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q169165,Washington Wizards,Washington Wizards,1961,",
+      "operations": [],
+      "final_answer": "Q169165,Washington Wizards,Washington Wizards,1961,"
+    }
+  },
+  {
+    "qid": "Q26",
+    "question": "Which team drafted the player who won the NBA Sportsmanship Award the most times?",
+    "answer": "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_12211979_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-12211979-2"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q311895,Grant Hill,"
+              },
+              {
+                "text": "Player—draftedby-->team"
+              },
+              {
+                "text": "Q311895,Q169661,"
+              },
+              {
+                "text": "Team node"
+              },
+              {
+                "text": "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,",
+      "operations": [],
+      "final_answer": "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,"
+    }
+  },
+  {
+    "qid": "Q27",
+    "question": "What was the best triple-double performance of the player who most recently won the NBA All-Star Game Kobe Bryant Most Valuable Player Award two consecutive times?",
+    "answer": "Q196185,Russell Westbrook,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Who is the player who won the NBA All-Star Game Kobe Bryant Most Valuable Player Award two consecutive times?",
+          "Award node",
+          "Q31391,NBA All-Star Game Kobe Bryant Most Valuable Player Award,",
+          "Player—recievedaward-->award",
+          "Q196185,Q31391,2016",
+          "Q196185,Q31391,2015",
+          "Player node",
+          "Q196185,Russell Westbrook,"
+        ]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_16555375_4",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-16555375-4row 4"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q196185,Russell Westbrook,",
+      "operations": [],
+      "final_answer": "Q196185,Russell Westbrook,"
+    }
+  },
+  {
+    "qid": "Q28",
+    "question": "Which team did the athlete who won the Best Championship Performance ESPY Award in the 2012 NBA Finals play for?",
+    "answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who was the athlete who won the Best Championship Performance ESPY Award in the 2012 NBA Finals?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_11999396_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-11999396-1row 8"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Which team did the athlete play for?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "From graph",
+            "evidence": [
+              {
+                "text": "From graph"
+              },
+              {
+                "text": "Player node"
+              },
+              {
+                "text": "Q36159,LeBron James,"
+              },
+              {
+                "text": "Player—playfor-->team: "
+              },
+              {
+                "text": "Q36159,Q169138,10 July 2010,2014,6,power forward; small forward(year filter)"
+              },
+              {
+                "text": "Team: "
+              },
+              {
+                "text": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison",
+      "operations": [],
+      "final_answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison"
+    }
+  },
+  {
+    "qid": "Q29",
+    "question": "In Kareem Abdul-Jabbar's away game with the most blocks, which coach led the home team?",
+    "answer": "Q660606,Dwane Casey,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Which away game had Kareem Abdul-Jabbar's highest number of blocks?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_16899_3",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From Table2-16899-3first row"
+              },
+              {
+                "text": "==> Which team was the home team in that game?"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Who is the coach of the home team?",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Team node",
+          "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,",
+          "Team—coachedby-->coach",
+          "Q169661,Q660606",
+          "Coach node",
+          "Q660606,Dwane Casey,"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q660606,Dwane Casey,",
+      "operations": [],
+      "final_answer": "Q660606,Dwane Casey,"
+    }
+  }
+]

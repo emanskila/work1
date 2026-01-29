@@ -1,0 +1,79 @@
+{
+  "id": "2-13618767-5",
+  "page_title": "1992–93 Chicago Bulls season",
+  "section_title": "Series summary",
+  "caption": "Series summary",
+  "doc": {
+    "id": "2-13618767-5",
+    "rows": [
+      [
+        "Game 1",
+        "June 9",
+        "Phoenix",
+        "92-100",
+        "Chicago",
+        "NBC 9:00pm et"
+      ],
+      [
+        "Game 2",
+        "June 11",
+        "Phoenix",
+        "108-111",
+        "Chicago",
+        "NBC 9:00pm et"
+      ],
+      [
+        "Game 3",
+        "June 13",
+        "Chicago",
+        "121-129 (3ot)",
+        "Phoenix",
+        "NBC 8:30pm et"
+      ],
+      [
+        "Game 4",
+        "June 16",
+        "Chicago",
+        "111-105",
+        "Phoenix",
+        "NBC 8:00pm et"
+      ],
+      [
+        "Game 5",
+        "June 18",
+        "Chicago",
+        "98-108",
+        "Phoenix",
+        "NBC 8:00pm et"
+      ],
+      [
+        "Game 6",
+        "June 20",
+        "Phoenix",
+        "98-99",
+        "Chicago",
+        "NBC 9:00pm et"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Game",
+      "Date",
+      "Home Team",
+      "Result",
+      "Road Team",
+      "TV Time"
+    ],
+    "caption": "Series summary",
+    "page_id": 13618767,
+    "page_title": "1992–93 Chicago Bulls season",
+    "section_title": "Series summary"
+  }
+}

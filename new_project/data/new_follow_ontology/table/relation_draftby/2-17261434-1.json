@@ -1,0 +1,85 @@
+{
+  "id": "2-17261434-1",
+  "page_title": "1984–85 Denver Nuggets season",
+  "section_title": "Draft picks",
+  "caption": "Draft picks",
+  "doc": {
+    "id": "2-17261434-1",
+    "rows": [
+      [
+        "2",
+        "42",
+        "Willie White",
+        "United States",
+        "Tennessee-Chattanooga"
+      ],
+      [
+        "4",
+        "79",
+        "Karl Tilleman",
+        "Canada",
+        "Calgary"
+      ],
+      [
+        "5",
+        "103",
+        "Prince Bridges",
+        "United States",
+        "Missouri"
+      ],
+      [
+        "6",
+        "125",
+        "Willie Burton",
+        "United States",
+        "Tennessee"
+      ],
+      [
+        "7",
+        "149",
+        "Mark Simpson",
+        "United States",
+        "Catawba College"
+      ],
+      [
+        "8",
+        "171",
+        "Bill Wendlandt",
+        "United States",
+        "Texas"
+      ],
+      [
+        "9",
+        "194",
+        "Cecil Exum",
+        "United States Australia",
+        "North Carolina"
+      ],
+      [
+        "10",
+        "215",
+        "Dexter Bailey",
+        "United States",
+        "Xavier (OH)"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Nationality",
+      "School/Club Team"
+    ],
+    "caption": "Draft picks",
+    "page_id": 17261434,
+    "page_title": "1984–85 Denver Nuggets season",
+    "section_title": "Draft picks"
+  }
+}

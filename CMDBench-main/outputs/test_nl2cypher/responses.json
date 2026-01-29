@@ -1,0 +1,24 @@
+[
+  {
+    "qid": "0bbeae6f-90c9-4a11-a39b-915b1d97b111",
+    "question": "In which American city do the 'Wizards' play Basketball?",
+    "answer": "13 July 1964",
+    "provenance_graph": {
+      "cypher": "MATCH (p:Player {name: 'Michael Jackson', place_of_birth: 'Fairfax'}) RETURN p.date_of_birth AS date_of_birth",
+      "node_ids": [
+        2201
+      ],
+      "edge_ids": [],
+      "type": "point"
+    },
+    "model_response": "The information provided does not specify the American city where the 'Wizards' play basketball.",
+    "model_provenance": {
+      "graph": {
+        "cypher": "MATCH (t:Team)-[hv:hasHomeVenue]->(v:Venue) WHERE toLower(t.name) = 'wizards' RETURN v.name",
+        "graph_str": "[]",
+        "node_ids": [],
+        "edge_ids": []
+      }
+    }
+  }
+]

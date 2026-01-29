@@ -1,0 +1,444 @@
+=== TABLE 1 ===
+Round | Pick | Player | Position | Team | College
+1 | 1 | Clifton McNeely |  | Pittsburgh Ironmen | Texas Wesleyan
+=== TABLE 2 ===
+Round | Player | Position | Team | College
+- | Paul Hoffman | G/F | Pittsburgh Ironmen | Purdue
+- | Red Rocha | F/C | Pittsburgh Ironmen | Oregon State
+=== TABLE 3 ===
+Game | Data | Home Team | Result | Road Team
+Game 1 | April 18 | Boston | 108-96 | San Francisco
+=== TABLE 4 ===
+Game | Date | Opponent | Score | Location/Attendance | Series
+1 | April 11 | L.A. Lakers | 93-95 | The Forum | 0-1
+=== TABLE 5 ===
+Game | Data | Result | Site | Series
+Game 1 | April 24 (Fri.) | New York Knicks 124, Los Angeles Lakers 112 | @ New York | Knicks lead, 1 game to 0
+=== TABLE 6 ===
+Date | Visitor | Score | Home | Record
+October 23, 1976 | San Antonio Spurs | 98–117 | New York Knicks | 1-1
+=== TABLE 7 ===
+Game | Date | Home Team | Result | Road Team | TV Time
+Game 1 | June 9 | Phoenix | 92-100 | Chicago | NBC 9:00pm et
+=== TABLE 8 ===
+Pos | Player | Team | Height | Weight
+F/C | Stromile Swift | Vancouver Grizzlies | 6–10 | 220
+=== TABLE 9 ===
+Pos.Pos. | Player | Team | Height | Weight | First round | Final round
+G | Chauncey Billups | Denver Nuggets | 6–3 | 202 | 17 | 14
+=== TABLE 10 ===
+Pos.Pos. | Player | Team | Height | Weight | First round | Final round
+F | Paul Pierce | Boston Celtics | 6–7 | 235 | 17 | 20
+=== TABLE 11 ===
+Season | Player | School | Position | Class
+1971–72 | Bill Walton | UCLA | Center | Sophomore
+=== TABLE 12 ===
+Year | Flagship Station | Play-by-play | Color commentator(s) | Studio host
+2009-10 | WEEI | Sean Grande | Cedric Maxwell | John Ryder
+=== TABLE 13 ===
+Year | Sportsperson | Nationality | Team | Competition | Sport
+2004 | LeBron James | United States | Cleveland Cavaliers | National Basketball Association | Basketball
+=== TABLE 14 ===
+Year | Player | Nationality | postion | Team
+1997 | Michael Jordan | United States | Shooting guard | Chicago Bulls
+=== TABLE 15 ===
+Game | 3PM-A | Percent Made | Total Made | Total Attempted | Series Percent
+3 | 7-9 | 0.777 | 16 | 23 | 0.700
+=== TABLE 16 ===
+Game | 3PM-A | Percent Made | Total Made | Total Attempted
+1988 | Los Angeles Lakers | Detroit Pistons | 108–105 | The Forum , Inglewood, California
+=== TABLE 17 ===
+Year | Rebs | Asts | Stls | Blks
+04-05 | 8.6 | 1.5 | 1.0 | 0.8
+=== TABLE 18 ===
+Player | No.(s) | Height in Ft. | Position | Years for Rockets | School/Club Team/Country
+Charles Barkley | 4 | 6-6 | Forward | 1996-2000 | Auburn
+=== TABLE 19 ===
+Year | Round | Player | Nationality | Position | College/High School/Club
+1947 | 1 | Dick Holub | United States | C | Long Island
+=== TABLE 20 ===
+Draft | Round | Pick | Player | College/High School/Club
+1995 | 1 | 6 | Bryant Reeves | Oklahoma State
+=== TABLE 21 ===
+Season | Record | Seed | First Round | Conference Semifinals | Conference Finals | NBA Finals
+2010–2011 † | 55–27 | 4th | Denver Nuggets ( Won 4-1 ) | Memphis Grizzlies ( Won 4-3 ) | Dallas Mavericks ( Lost 4-1 ) | -
+=== TABLE 22 ===
+Round | Pick | Player | Position | Nationality | Team | College
+4 | 46 | Bud Grant Category:Articles with hCards | F | United States | Minneapolis Lakers | Minnesota
+=== TABLE 23 ===
+Pick | Player | Position | Nationality | Former Team
+8 | Mike Brown | Point Guard | United States | Chicago Bulls
+=== TABLE 24 ===
+Game | Date | Opponent | Result | Heat points | Opponents | Record | Streak
+14 | December 3 | @ Toronto | Win | 112 | 94 | 11-3 | Won 5
+=== TABLE 25 ===
+Tournament | Games played | Points per game | Rebounds per game | Assists per game
+2007 EuroBasket | 9 | 9.3 | 5.8 | 1.2
+=== TABLE 26 ===
+Pos. | Player | Team | Height | Weight
+F | Bill Walker | Maine Red Claws | 6–5 | 220
+=== TABLE 27 ===
+Season | Player | Position | Nationality | Team
+2009–10 | Grant Hill Category:Articles with hCards (3) | Forward | United States | Phoenix Suns
+=== TABLE 28 ===
+Number | Opponent | Box Score | Points | Rebounds | Assists | Steals
+4 | vs. Orlando Magic | W 125–124 | 32 | 10 | 13 | 1
+=== TABLE 29 ===
+Year of award | Athlete | Nation represented or nation of citizenship | Date(s) | Game or event | Sport
+2012 | Lebron James | United States | June 12–21, 2012 | 2012 NBA Finals | Basketball
+=== TABLE 30 ===
+Blocks | Opponent | Home/Away | Minutes played | Points | Rebounds | Assists
+11 | Detroit Pistons | Away | 46 | 29 | 21 | 2
+=== PARAGRAPHS (non-empty) ===
+Q1：在1947 BAA中Toronto Huskies队中选中的队员后来先后还效力于哪些队伍？
+A1：
+SQ1：在1947 BAA中Toronto Huskies队中选中的队员是谁？
+from表2-12093318-3，第一行
+from表2-12093318-4，第9、21行
+SQ2：该队员效力于哪些球队？
+from图：palyer节点—playfor-->team节点
+Q2438533（Clifton McNeely）--playfor-->XXX（无路径）
+Q1622629（Paul Hoffman）—playfor-->Q131364（New York Knicks）
+Q1622629（Paul Hoffman）—playfor-->Q2928124（Baltimore Bullets）
+Q2328645（Red Rocha）—playfor-->Q169661（Detroit Pistons）
+Get到实体后，能否继续以该实体在原有源上检索？同时也链接到异源查询
+Q2：John Havlicek所在球队在1963年NBA中输赢如何？
+A2：
+SQ1：John Havlicek效力于哪个球队？
+from图：
+player节点
+Q71127,John Havlicek
+palyer节点—playfor-->team节点
+Q71127,Q131371,1962,1977,,
+Team节点
+Q131371,Boston Celtics,Boston Celtics,1946,
+SQ3：该球队在1963年NBA总决赛中的表现如何？
+from表2-17063996-4，筛选Result=loss，第一行
+4:1 Boston Celtics战胜San Francisco
+Q3：Atlanta Hawks球队在1968年季后赛中输给了哪个教练带领的队伍？
+A3：
+SQ1：Atlanta Hawks球队在1968年季后赛中输给了哪个队？（感觉无法用简单的nl2sql查询）
+From 2-18409087-10
+SQ2：该队的教练是谁？
+from图：
+Team节点
+Q121783,Los Angeles Lakers,Los Angeles Lakers,1946; 1947,Jeanie Buss（存在模糊匹配）
+team节点—coachedby-->ccoach节点
+Q121783,Q2500405 --> Darvin Ham
+Q4：Walt Frazier曾任球队point guard，当时所在球队在1969年NBA总决赛中表现如何？
+Q4：Walt Frazier在哪个球队担任point guard？
+SQ1：
+From 图
+Player节点
+Q348696,Walt Frazier,
+Player—playfor-->team
+Q348696,Q131364,1967,1977,10,point guard
+Q348696,Q162990,,,,×
+SQ2：该队伍在1969年NBA总决赛中表现如何？
+From表2-15148390-10
+--> New York Knicks4：3赢得比赛
+Q5：Peter Holt创办的球队在1976年10月参与了几场比赛？
+A5：Peter Holt创办的球队是哪支？
+SQ1：
+From图
+Team节点
+Q159729,San Antonio Spurs,San Antonio Spurs,1967,Peter Holt
+SQ2：该球队在1976年10月参与了几场比赛？
+From 表2-16386910-2
+6场（计数）
+Q6：Chicago Bulls队伍在1992年的赛季概览中所对阵的队伍日常在哪里训练？
+A6：
+SQ1：Chicago Bulls队伍在1992年的赛季概览中所对阵的队伍是谁？
+From 表2-13618767-5
+SQ2：该队伍日常在哪里训练？
+From图
+Team节点
+Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver（模糊匹配）
+Team—hashomevenue-->Venue
+Q164177,Q670890,1968,1992
+Q164177,Q1538690,1992,
+Venue节点
+Q1538690,Footprint Center,Footprint Center
+Q7：2001年NBA全明星赛中，来自Vancouver Grizzlies队伍的队员获得过什么荣誉吗？
+A7：
+SQ1：2001年NBA全明星赛中，来自Vancouver Grizzlies队伍有谁？
+from 表2-12498087-5第4行
+SQ2：该队员获得过什么奖项？
+From 图
+Player节点
+Q716062,Stromile Swift,
+Player—recieveaward-->award
+Q716062,Q7569437,
+Award节点
+Q7569437,Southeastern Conference Men's Basketball Player of the Year,Southeastern Conference Men%27s Basketball Player of the Year
+Q8：在2010年NBA明星赛的三分球赛中，来自Denver Nuggets球队的队员曾获得过哪些奖？
+A8：
+SQ1：2010年NBA明星赛的三分球赛中，来自Denver Nuggets球队的队员是谁？
+From 表2-15753220-7第3行
+SQ2：他曾获得过哪些奖？
+From 图
+Player节点
+Q298531,Chauncey Billups,
+Player—recieveaward-->award：
+Q298531,Q1418596,2009--> Q1418596,NBA Sportsmanship Award,NBA Sportsmanship Award
+Q298531,Q13425905,2013--> Q13425905,Twyman–Stokes Teammate of the Year Award,Twyman%E2%80%93Stokes Teammate of the Year Award
+Q298531,Q739499,2004--> Q739499,Bill Russell NBA Finals Most Valuable Player Award,NBA Finals Most Valuable Player award
+Q298531,Q1501719,2008—> Q1501719,J. Walter Kennedy Citizenship Award,J. Walter Kennedy Citizenship Award
+Q9：2010年NBA明星赛的三分球赛中，准率最高的球员的教练是谁？
+A9：
+SQ1：2010年NBA明星赛的三分球赛中，准率最高的球员是谁？
+From 表2-15753220-7第1行
+SQ2：他（所在队）的教练是？
+From 图
+Team节点
+Q131371,Boston Celtics,Boston Celtics,1946,
+Team—coach-->coach：
+Q131371,Q4954288
+Q4954288,Brad Stevens,Brad Stevens,United States of America,Indianapolis,English,male,22 October 1976,,
+Q10：蝉联三年Adolph Rupp Trophy奖项的球员后来效力于哪些球队？
+A10：
+SQ1：获得第一届Adolph Rupp Trophy奖项的球员是谁？
+From表2-1676727-2 第1、2、3行
+SQ2：他曾效力于哪些球队？
+From图
+Player节点
+Q363246,Bill Walton
+Player—playfor-->team
+Q363246,Q131371,,,,
+Q363246,Q167253,,,,
+Q363246,Q976396,,,,
+Team节点
+Q131371,Boston Celtics,Boston Celtics,1946,
+Q167253,Portland Trail Blazers,Portland Trail Blazers,1970,Paul Allen
+Q976396,Los Angeles Clippers,Los Angeles Clippers,1970,Los Angeles Lakers; Steve Ballmer
+Q11：于1998年获得North Carolina Sports Hall of Fame奖的教练在二十世纪初作为嘉宾（Color commentator）与哪些主持人一起点评Boston Celtics球队的电视转播？
+A11：
+SQ1：于1998年获得North Carolina Sports Hall of Fame奖的人有谁？
+From图
+Award节点
+Q41628143,North Carolina Sports Hall of Fame,
+Player—recieveaward-->award：
+Q555100,Q41628143,1998
+Q2326948,Q41628143,1998
+SQ2：该人是教练吗？
+From图
+Player—assameas-->coach：
+Q555100,Q555100
+Player节点：
+Q555100,Cedric Maxwell
+SQ3：该人点评了几场Boston Celtics球队的电视转播？
+From表2-14902507-8全部
+Q12：Cleveland Cavaliers队获得Best Breakthrough Athlete ESPY Award奖的队员负责的点位是？
+A12：
+Q1：Cleveland Cavaliers队获得Best Breakthrough Athlete ESPY Award奖的队员是谁？
+From表2-10540109-1第12行（还可以在图数据库检索）
+Q2：该队员的点位是？
+From图
+Player节点
+Q36159,LeBron James
+Player—playsposition-->position：
+Q36159,Q212413
+Position节点
+Q212413,point guard,Point guard
+Q13：蝉联三届Best NBA Player ESPY Awar的球队的教练是谁？
+A13：
+Q1：蝉联三届Best NBA Player ESPY Awar的球队是哪支？
+From表2-10540109-1全部，计数
+Q2：该球队的教练是谁？
+Team节点：
+Q128109,Chicago Bulls,Chicago Bulls,1966,Dick Klein; Jerry Reinsdorf
+Team—coachedby-->coach：
+Q128109,Q580808
+Coach节点：
+Q580808,Fred Hoiberg
+Q14：曾被Cleveland Cavaliers选中的Danny在NBA Finals' 3pt record中的最高累计命中率为多少？
+A14：
+Q1：Danny是谁？
+from图
+player节点（多个候选项）
+Q555436,Danny Green,
+Q2：是否被Cleveland Cavaliers选中？（筛选）
+Q555436,Q162990,（√）
+Q3：该球员在NBA Finals' 3pt record中的最高累计命中率为多少
+From表2-17107550-1（对属性排序）
+D15：Darvin Ham教练带领的队伍在1988年NBA总决赛抢7中成绩如何？
+A15：
+Q1：Darvin Ham教练带领的队伍是？
+From图
+Coach节点
+Q2500405,Darvin Ham,
+Team—coachedby-->coach：
+Q121783,Q2500405
+Team节点：
+Q121783,Los Angeles Lakers
+SQ2：
+From表2-15664872-5 第14行
+D16：Hakim Warrick被球队选走那个赛季的场均篮板数为多少？
+A16：
+SQ1：Hakim Warrick被球队选走是在哪年？
+From图
+Player节点
+Q1264436,Hakim Warrick,-->（属性：职业生涯开始年：2005）
+Player—draftedby-->team
+Q1264436,Q165529,
+Team节点：
+Q165529,Memphis Grizzlies,Memphis Grizzlies,1995,
+From表2-1684650-1第4行
+Q17：Houston Rockets球队K姓的4号球员在效力期间获得过什么奖嘛？
+A17：
+SQ1：Houston Rockets球队B姓的4号球员是谁？
+From表2-11734041-2第5行
+SQ2：效力期间得过什么奖？
+Player节点
+Q192707,Charles Barkley,
+Player—recieveaward-->award：
+Q192707,Q674359,1996
+Award节点：
+Q674359,All-NBA Team,All-NBA Team
+Q18：被New York Knicks队伍在1947年首轮选中的成员有兼任教练吗？
+A18：
+SQ1：被New York Knicks队伍在1947年首轮选中的成员是谁？
+From表2-17269615-4第一行
+SQ2：成员也是一名教练吗？
+From图
+Player节点
+Q3706951,Dick Holub,
+Player—assameas-->coach
+Q3706951,Q3706951
+coach节点
+Q3706951,Dick Holub,Dick Holub,United States of America,Racine,English,male,29 October 1921,1947,1952
+（这个面向图的查询感觉略显牵强）
+Q19：Memphis Grizzlies于1995年首位选中的球员后来效力于哪个球队？
+A19：
+SQ1：Memphis Grizzlies于1995年首位选中的球员是谁？
+From表2-16815697-2第1行
+SQ2：该球员后来效力于哪个球队？
+From图
+Player节点
+Q2308704,Bryant Reeves,
+Player—playfor-->team
+Q2308704,Q3307390,1995,2001,,
+Team节点
+Q3307390,Vancouver Grizzlies,Vancouver Grizzlies,1995,
+Q20：James Harden2010-2010区间所在的球队在当季的季后赛中获得了第几名？
+A20：
+SQ1：James Harden效力于哪个球队（条件：2010-2010区间）？
+From图
+Player节点
+Q136678,James Harden,
+Player—playfor-->team
+Q136678,Q180950,11 July 2009,27 October 2012,13,shooting guard
+Team节点
+Q180950,Oklahoma City Thunder,Oklahoma City Thunder,2008; 1967,
+From表2-18256220-1第2行
+Q21：同时荣获过Pro Football Hall of Fame和Canadian Football Hall of Fame的球员在1950年的NBA选秀中在第几轮被选中？
+A21：
+SQ1：同时荣获过Pro Football Hall of Fame和Canadian Football Hall of Fame的球员是谁？
+From图
+Award节点：
+Q778412,Pro Football Hall of Fame,Pro Football Hall of Fame
+Q3517653,Canadian Football Hall of Fame,Canadian Football Hall of Fame
+Player—recievedaward-->award：
+Q960594,Q778412,
+Q970476,Q778412,
+Q970476,Q3517653,
+Player节点
+Q970476,Bud Grant,
+SQ2：该球员在1950年的NBA选秀中在第几轮被选中
+From表2-11157130-4 第8行
+Q22：Charlotte Hornets队在1988年NBA扩张选秀中的第八位选择对应的球员后来有获得什么荣誉吗？
+A22：
+SQ1：Charlotte Hornets队在1988年NBA扩张选秀中的第八位选择对应的球员是谁？
+From表2-17116053-1 第4行
+SQ2：该球员后来获得过什么荣誉？
+From图
+Player节点
+Q458065,Mike Brown,
+Player—recieveaward-->award
+Q458065,Q918054,2009
+Award节点
+Q918054,NBA Coach of the Year Award,NBA Coach of the Year Award
+D23：Erik Spoelstra教练所指导的队伍在1995年常规赛中状态最好时连胜了多少场？
+A23：
+SQ1：
+From图
+Coach节点
+Q440324,Erik Spoelstra,
+Team—coachedby-->coach
+Q169138,Q440324
+Team节点
+Q169138,Miami Heat,Miami Heat,1988,Micky Arison
+SQ2：
+From表2-17292579-3第14行
+Q23：Miami Heat场均篮板数最高的赛季是效力于哪支队伍的？
+A23：
+SQ1：Miami Heat场均篮板数最高的赛季是哪年？
+From表1-2387461-1第3行
+SQ2：Miami Hea效力于哪支队伍？（条件：年份）
+Player节点
+Q317527,Boris Diaw,
+Player—playfor-->team
+Q317527,Q164177,2005,2008,3,power forward
+Team节点
+Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver
+Q25：在2010年NBA全明星赛的创意扣篮赛中较高且来自Maine Red Claws球队的队员是被哪个球队选中的？
+A25：
+SQ1:
+From表2-15753220-15第5行
+SQ2：
+From图
+Player节点
+Q547758,Bill Walker,
+Player—draftedby-->team
+Q547758,Q169165,
+Team节点
+Q169165,Washington Wizards,Washington Wizards,1961,
+Q26：获得最多次NBA Sportsmanship Award奖项的球员是被哪个球队选中的？
+A26：
+SQ1：
+From表2-12211979-2
+SQ2：
+From图
+Player节点
+Q311895,Grant Hill,
+Player—draftedby-->team
+Q311895,Q169661,
+Team节点
+Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,
+Q27：最近蝉联两届NBA All-Star Game Kobe Bryant Most Valuable Player Award的球员最好的一次三双成绩是怎样的？
+A27：
+SQ1：
+蝉联两届NBA All-Star Game Kobe Bryant Most Valuable Player Award的球员是谁？
+Award节点
+Q31391,NBA All-Star Game Kobe Bryant Most Valuable Player Award,
+Player—recievedaward-->award
+Q196185,Q31391,2016
+Q196185,Q31391,2015
+Player节点
+Q196185,Russell Westbrook,
+SQ2：
+From表2-16555375-4第4行
+Q28：在2012 NBA Finals总决赛获得Best Championship Performance ESPY Award奖项的运动员效力于哪个球队？
+A28：
+SQ1：在2012 NBA Finals总决赛获得Best Championship Performance ESPY Award奖项的运动员是谁？
+From表2-11999396-1第8行
+SQ2：该运动员效力于哪个球队？
+From图
+Player节点
+Q36159,LeBron James,
+Player—playfor-->team：
+Q36159,Q169138,10 July 2010,2014,6,power forward; small forward（年份筛选）
+Team：
+Q169138,Miami Heat,Miami Heat,1988,Micky Arison
+Q29：Kareem Abdul-Jabbar盖帽数最高且非主场的一场比赛的主场队是哪个教练带队？
+A29：
+SQ1：Kareem Abdul-Jabbar盖帽数最高且非主场的一场比赛是哪个？
+From表2-16899-3第一行
+==>该场的主场是队伍？
+SQ2：该主场球队的教练是哪个？
+Team节点
+Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,
+Team—coachedby-->coach
+Q169661,Q660606
+Coach节点
+Q660606,Dwane Casey,

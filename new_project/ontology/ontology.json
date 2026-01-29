@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "name": "domain_ontology",
+  "concepts": [
+    {
+      "id": "player",
+      "aliases": [],
+      "metadata": {
+        "graph": {
+          "file": "Player.csv",
+          "id_column": "wikidata_id:ID(Player)"
+        }
+      }
+    },
+    {
+      "id": "team",
+      "aliases": [],
+      "metadata": {
+        "graph": {
+          "file": "Team.csv",
+          "id_column": "wikidata_id:ID(Team)"
+        }
+      }
+    },
+    {
+      "id": "coach",
+      "aliases": [],
+      "metadata": {
+        "graph": {
+          "file": "Coach.csv",
+          "id_column": "wikidata_id:ID(Coach)"
+        }
+      }
+    },
+    {
+      "id": "award",
+      "aliases": [],
+      "metadata": {
+        "graph": {
+          "file": "Award.csv",
+          "id_column": "wikidata_id:ID(Award)"
+        }
+      }
+    },
+    {
+      "id": "game",
+      "aliases": []
+    },
+    {
+      "id": "division",
+      "aliases": [],
+      "metadata": {
+        "graph": {
+          "file": "Division.csv",
+          "id_column": "wikidata_id:ID(Division)"
+        }
+      }
+    },
+    {
+      "id": "position",
+      "aliases": [],
+      "metadata": {
+        "graph": {
+          "file": "Position.csv",
+          "id_column": "wikidata_id:ID(Position)"
+        }
+      }
+    },
+    {
+      "id": "venue",
+      "aliases": [],
+      "metadata": {
+        "graph": {
+          "file": "Venue.csv",
+          "id_column": "wikidata_id:ID(Venue)"
+        }
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "playfor",
+      "source": "player",
+      "target": "team",
+      "aliases": [
+        "playfor",
+        "play for",
+        "playedfor",
+        "played for",
+        "playsfor",
+        "plays for",
+        "playsFor"
+      ],
+      "soft_bindings": {
+        "graph": {
+          "file": "relation_playsFor.csv",
+          "start_id_column": ":START_ID(Player)",
+          "end_id_column": ":END_ID(Team)",
+          "properties": {
+            "start_time": "start_time",
+            "end_time": "end_time",
+            "sport_number": "sport_number",
+            "position": "position"
+          }
+        },
+        "table": {},
+        "document": {}
+      }
+    },
+    {
+      "id": "draftby",
+      "source": "player",
+      "target": "team",
+      "aliases": [
+        "selectedby",
+        "selected by",
+        "draftedby",
+        "drafted by",
+        "pickedby",
+        "picked by",
+        "draftedBy"
+      ],
+      "soft_bindings": {
+        "graph": {
+          "file": "relation_draftedBy.csv",
+          "start_id_column": ":START_ID(Player)",
+          "end_id_column": ":END_ID(Team)",
+          "properties": {
+            "time": "time"
+          }
+        },
+        "table": {},
+        "document": {}
+      }
+    },
+    {
+      "id": "coachedby",
+      "source": "team",
+      "target": "coach",
+      "aliases": [
+        "coachedBy"
+      ],
+      "soft_bindings": {
+        "graph": {
+          "file": "relation_coachedBy.csv",
+          "start_id_column": ":START_ID(Team)",
+          "end_id_column": ":END_ID(Coach)",
+          "properties": {}
+        },
+        "table": {},
+        "document": {}
+      }
+    },
+    {
+      "id": "receive",
+      "source": "player",
+      "target": "award",
+      "aliases": [
+        "receivesAward"
+      ],
+      "soft_bindings": {
+        "graph": {
+          "file": "relation_receivesAward.csv",
+          "start_id_column": ":START_ID(Player)",
+          "end_id_column": ":END_ID(Award)",
+          "properties": {
+            "time": "time"
+          }
+        },
+        "table": {},
+        "document": {}
+      }
+    },
+    {
+      "id": "attend",
+      "source": "team",
+      "target": "game",
+      "aliases": [],
+      "soft_bindings": {
+        "graph": {},
+        "table": {},
+        "document": {}
+      }
+    },
+    {
+      "id": "playsposition",
+      "source": "player",
+      "target": "position",
+      "aliases": [
+        "playsPosition"
+      ],
+      "soft_bindings": {
+        "graph": {
+          "file": "relation_playsPosition.csv",
+          "start_id_column": ":START_ID(Player)",
+          "end_id_column": ":END_ID(Position)",
+          "properties": {}
+        },
+        "table": {},
+        "document": {}
+      }
+    },
+    {
+      "id": "partofdivision",
+      "source": "team",
+      "target": "division",
+      "aliases": [
+        "partOfDivision"
+      ],
+      "soft_bindings": {
+        "graph": {
+          "file": "relation_partOfDivision.csv",
+          "start_id_column": ":START_ID(Team)",
+          "end_id_column": ":END_ID(Division)",
+          "properties": {}
+        },
+        "table": {},
+        "document": {}
+      }
+    },
+    {
+      "id": "hashomevenue",
+      "source": "team",
+      "target": "venue",
+      "aliases": [
+        "hasHomeVenue"
+      ],
+      "soft_bindings": {
+        "graph": {
+          "file": "relation_hasHomeVenue.csv",
+          "start_id_column": ":START_ID(Team)",
+          "end_id_column": ":END_ID(Venue)",
+          "properties": {
+            "start_time": "start_time",
+            "end_time": "end_time"
+          }
+        },
+        "table": {},
+        "document": {}
+      }
+    },
+    {
+      "id": "issameas",
+      "source": "player",
+      "target": "coach",
+      "aliases": [
+        "isSameAs"
+      ],
+      "soft_bindings": {
+        "graph": {
+          "file": "relation_isSameAs.csv",
+          "start_id_column": ":START_ID(Player)",
+          "end_id_column": ":END_ID(Coach)",
+          "properties": {}
+        },
+        "table": {},
+        "document": {}
+      }
+    },
+    {
+      "id": "performance",
+      "source": "player",
+      "target": "game",
+      "aliases": [
+        "performance",
+        "performs",
+        "played"
+      ],
+      "soft_bindings": {
+        "graph": {},
+        "table": {},
+        "document": {}
+      }
+    }
+  ]
+}

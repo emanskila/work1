@@ -1,0 +1,99 @@
+{
+  "id": "2-17064421-1",
+  "page_title": "1981–82 San Antonio Spurs season",
+  "section_title": "Draft picks",
+  "caption": "Draft picks",
+  "doc": {
+    "id": "2-17064421-1",
+    "rows": [
+      [
+        "2",
+        "28",
+        "Gene Banks",
+        "United States",
+        "Duke"
+      ],
+      [
+        "2",
+        "30",
+        "Ed Rains",
+        "United States",
+        "South Alabama"
+      ],
+      [
+        "3",
+        "64",
+        "Tom Baker",
+        "United States",
+        "Eastern Kentucky"
+      ],
+      [
+        "4",
+        "87",
+        "Earl Belcher",
+        "United States",
+        "St. Bonaventure"
+      ],
+      [
+        "5",
+        "110",
+        "Mike Rhodes",
+        "United States",
+        "Vanderbilt"
+      ],
+      [
+        "6",
+        "133",
+        "Norman Shavers",
+        "United States",
+        "Jackson State"
+      ],
+      [
+        "7",
+        "156",
+        "Mark Minderman",
+        "United States",
+        "Northern Michigan"
+      ],
+      [
+        "8",
+        "178",
+        "Bob Bartholomew",
+        "United States",
+        "San Diego"
+      ],
+      [
+        "9",
+        "199",
+        "Leonel Marquetti",
+        "United States",
+        "Hampton"
+      ],
+      [
+        "10",
+        "219",
+        "Alvin Brooks",
+        "United States",
+        "Lamar"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Nationality",
+      "College"
+    ],
+    "caption": "Draft picks",
+    "page_id": 17064421,
+    "page_title": "1981–82 San Antonio Spurs season",
+    "section_title": "Draft picks"
+  }
+}

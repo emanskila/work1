@@ -1,0 +1,113 @@
+{
+  "id": "2-15753220-9",
+  "page_title": "2010 NBA All-Star Game",
+  "section_title": "Shooting Stars Competition",
+  "caption": "Contestants",
+  "doc": {
+    "id": "2-15753220-9",
+    "rows": [
+      [
+        "Texas",
+        "Dirk Nowitzki",
+        "Dallas Mavericks",
+        "1:28",
+        "34.3"
+      ],
+      [
+        "Texas",
+        "Becky Hammon",
+        "San Antonio Silver Stars",
+        "1:28",
+        "34.3"
+      ],
+      [
+        "Texas",
+        "Kenny Smith",
+        "Houston Rockets (retired)",
+        "1:28",
+        "34.3"
+      ],
+      [
+        "Los Angeles",
+        "Pau Gasol",
+        "Los Angeles Lakers",
+        "1:00",
+        "55.2"
+      ],
+      [
+        "Los Angeles",
+        "Marie Ferdinand-Harris",
+        "Los Angeles Sparks",
+        "1:00",
+        "55.2"
+      ],
+      [
+        "Los Angeles",
+        "Brent Barry",
+        "Los Angeles Clippers (retired)",
+        "1:00",
+        "55.2"
+      ],
+      [
+        "Sacramento",
+        "Tyreke Evans",
+        "Sacramento Kings",
+        "1:46",
+        "—"
+      ],
+      [
+        "Sacramento",
+        "Nicole Powell",
+        "Sacramento Monarchs",
+        "1:46",
+        "—"
+      ],
+      [
+        "Sacramento",
+        "Chris Webber",
+        "Sacramento Kings (retired)",
+        "1:46",
+        "—"
+      ],
+      [
+        "Atlanta",
+        "Joe Johnson",
+        "Atlanta Hawks",
+        "1:47",
+        "—"
+      ],
+      [
+        "Atlanta",
+        "Angel McCoughtry",
+        "Atlanta Dream",
+        "1:47",
+        "—"
+      ],
+      [
+        "Atlanta",
+        "Steve Smith",
+        "Atlanta Hawks (retired)",
+        "1:47",
+        "—"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "City/State",
+      "Members",
+      "Team",
+      "First round",
+      "Final round"
+    ],
+    "caption": "Contestants",
+    "page_id": 15753220,
+    "page_title": "2010 NBA All-Star Game",
+    "section_title": "Shooting Stars Competition"
+  }
+}

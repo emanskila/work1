@@ -1,0 +1,71 @@
+{
+  "id": "1-10015132-14",
+  "page_title": "Toronto Raptors all-time roster",
+  "section_title": "O",
+  "caption": "O",
+  "doc": {
+    "id": "1-10015132-14",
+    "name": "table_10015132_14",
+    "rows": [
+      [
+        "Patrick O'Bryant",
+        13,
+        "United States",
+        "Center",
+        "2009-10",
+        "Bradley"
+      ],
+      [
+        "Jermaine O'Neal",
+        6,
+        "United States",
+        "Forward-Center",
+        "2008-09",
+        "Eau Claire High School"
+      ],
+      [
+        "Dan O'Sullivan",
+        45,
+        "United States",
+        "Center",
+        "1995-96",
+        "Fordham"
+      ],
+      [
+        "Charles Oakley",
+        34,
+        "United States",
+        "Forward",
+        "1998-2001",
+        "Virginia Union"
+      ],
+      [
+        "Hakeem Olajuwon",
+        34,
+        "Nigeria / United States",
+        "Center",
+        "2001-02",
+        "Houston"
+      ]
+    ],
+    "types": [
+      "text",
+      "real",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Player",
+      "No.",
+      "Nationality",
+      "Position",
+      "Years in Toronto",
+      "School/Club Team"
+    ],
+    "caption": "O",
+    "page_title": "Toronto Raptors all-time roster",
+    "section_title": "O"
+  }
+}

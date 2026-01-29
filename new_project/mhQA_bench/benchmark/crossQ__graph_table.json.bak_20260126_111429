@@ -1,0 +1,1659 @@
+[
+  {
+    "qid": "Q1",
+    "question": "在1947 BAA中Toronto Huskies队中选中的队员后来先后还效力于哪些队伍？",
+    "answer": "Get到实体后，能否继续以该实体在原有源上检索？同时也链接到异源查询",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "在1947 BAA中Toronto Huskies队中选中的队员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_12093318_3",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "from表2-12093318-3，第一行"
+              }
+            ],
+            "answer": []
+          },
+          {
+            "modality": "table",
+            "source": "t_2_12093318_4",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "from表2-12093318-4，第9、21行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该队员效力于哪些球队？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "from图：palyer节点—playfor-->team节点",
+          "Q2438533（Clifton McNeely）--playfor-->XXX（无路径）",
+          "Q1622629（Paul Hoffman）—playfor-->Q131364（New York Knicks）",
+          "Q1622629（Paul Hoffman）—playfor-->Q2928124（Baltimore Bullets）",
+          "Q2328645（Red Rocha）—playfor-->Q169661（Detroit Pistons）",
+          "Get到实体后，能否继续以该实体在原有源上检索？同时也链接到异源查询"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Get到实体后，能否继续以该实体在原有源上检索？同时也链接到异源查询",
+      "operations": [],
+      "final_answer": "Get到实体后，能否继续以该实体在原有源上检索？同时也链接到异源查询"
+    }
+  },
+  {
+    "qid": "Q2",
+    "question": "John Havlicek所在球队在1963年NBA中输赢如何？",
+    "answer": "4:1 Boston Celtics战胜San Francisco",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "John Havlicek效力于哪个球队？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "from图：",
+          "player节点",
+          "Q71127,John Havlicek",
+          "palyer节点—playfor-->team节点",
+          "Q71127,Q131371,1962,1977,,",
+          "Team节点",
+          "Q131371,Boston Celtics,Boston Celtics,1946,"
+        ]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该球队在1963年NBA总决赛中的表现如何？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17063996_4",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "from表2-17063996-4，筛选Result=loss，第一行"
+              },
+              {
+                "text": "4:1 Boston Celtics战胜San Francisco"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "4:1 Boston Celtics战胜San Francisco",
+      "operations": [],
+      "final_answer": "4:1 Boston Celtics战胜San Francisco"
+    }
+  },
+  {
+    "qid": "Q3",
+    "question": "Atlanta Hawks球队在1968年季后赛中输给了哪个教练带领的队伍？",
+    "answer": "--> New York Knicks4：3赢得比赛",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Atlanta Hawks球队在1968年季后赛中输给了哪个队？（感觉无法用简单的nl2sql查询）",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_18409087_10",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From 2-18409087-10"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该队的教练是谁？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "from图：",
+          "Team节点",
+          "Q121783,Los Angeles Lakers,Los Angeles Lakers,1946; 1947,Jeanie Buss（存在模糊匹配）",
+          "team节点—coachedby-->ccoach节点",
+          "Q121783,Q2500405 --> Darvin Ham"
+        ]
+      },
+      {
+        "sqid": "SQ3",
+        "sq": "Walt Frazier曾任球队point guard，当时所在球队在1969年NBA总决赛中表现如何？",
+        "sources": [],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ4",
+        "sq": "Walt Frazier在哪个球队担任point guard？",
+        "sources": [],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ5",
+        "sq": "",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From 图",
+          "Player节点",
+          "Q348696,Walt Frazier,",
+          "Player—playfor-->team",
+          "Q348696,Q131364,1967,1977,10,point guard",
+          "Q348696,Q162990,,,,×"
+        ]
+      },
+      {
+        "sqid": "SQ6",
+        "sq": "该队伍在1969年NBA总决赛中表现如何？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15148390_10",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-15148390-10"
+              },
+              {
+                "text": "--> New York Knicks4：3赢得比赛"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 6,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ2",
+        "to": "SQ3",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ3",
+        "to": "SQ4",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ4",
+        "to": "SQ5",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ5",
+        "to": "SQ6",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "--> New York Knicks4：3赢得比赛",
+      "operations": [],
+      "final_answer": "--> New York Knicks4：3赢得比赛"
+    }
+  },
+  {
+    "qid": "Q5",
+    "question": "Peter Holt创办的球队在1976年10月参与了几场比赛？",
+    "answer": "Peter Holt创办的球队是哪支？",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Team节点",
+          "Q159729,San Antonio Spurs,San Antonio Spurs,1967,Peter Holt"
+        ]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该球队在1976年10月参与了几场比赛？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_16386910_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From 表2-16386910-2"
+              },
+              {
+                "text": "6场（计数）"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Peter Holt创办的球队是哪支？",
+      "operations": [],
+      "final_answer": "Peter Holt创办的球队是哪支？"
+    }
+  },
+  {
+    "qid": "Q6",
+    "question": "Chicago Bulls队伍在1992年的赛季概览中所对阵的队伍日常在哪里训练？",
+    "answer": "Q1538690,Footprint Center,Footprint Center",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Chicago Bulls队伍在1992年的赛季概览中所对阵的队伍是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_13618767_5",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From 表2-13618767-5"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该队伍日常在哪里训练？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Team节点",
+          "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver（模糊匹配）",
+          "Team—hashomevenue-->Venue",
+          "Q164177,Q670890,1968,1992",
+          "Q164177,Q1538690,1992,",
+          "Venue节点",
+          "Q1538690,Footprint Center,Footprint Center"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q1538690,Footprint Center,Footprint Center",
+      "operations": [],
+      "final_answer": "Q1538690,Footprint Center,Footprint Center"
+    }
+  },
+  {
+    "qid": "Q7",
+    "question": "2001年NBA全明星赛中，来自Vancouver Grizzlies队伍的队员获得过什么荣誉吗？",
+    "answer": "Q7569437,Southeastern Conference Men's Basketball Player of the Year,Southeastern Conference Men%27s Basketball Player of the Year",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "2001年NBA全明星赛中，来自Vancouver Grizzlies队伍有谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_12498087_5",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "from 表2-12498087-5第4行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该队员获得过什么奖项？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From 图",
+          "Player节点",
+          "Q716062,Stromile Swift,",
+          "Player—recieveaward-->award",
+          "Q716062,Q7569437,",
+          "Award节点",
+          "Q7569437,Southeastern Conference Men's Basketball Player of the Year,Southeastern Conference Men%27s Basketball Player of the Year"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q7569437,Southeastern Conference Men's Basketball Player of the Year,Southeastern Conference Men%27s Basketball Player of the Year",
+      "operations": [],
+      "final_answer": "Q7569437,Southeastern Conference Men's Basketball Player of the Year,Southeastern Conference Men%27s Basketball Player of the Year"
+    }
+  },
+  {
+    "qid": "Q8",
+    "question": "在2010年NBA明星赛的三分球赛中，来自Denver Nuggets球队的队员曾获得过哪些奖？",
+    "answer": "Q298531,Q1501719,2008—> Q1501719,J. Walter Kennedy Citizenship Award,J. Walter Kennedy Citizenship Award",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "2010年NBA明星赛的三分球赛中，来自Denver Nuggets球队的队员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15753220_7",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From 表2-15753220-7第3行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "他曾获得过哪些奖？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From 图",
+          "Player节点",
+          "Q298531,Chauncey Billups,",
+          "Player—recieveaward-->award：",
+          "Q298531,Q1418596,2009--> Q1418596,NBA Sportsmanship Award,NBA Sportsmanship Award",
+          "Q298531,Q13425905,2013--> Q13425905,Twyman–Stokes Teammate of the Year Award,Twyman%E2%80%93Stokes Teammate of the Year Award",
+          "Q298531,Q739499,2004--> Q739499,Bill Russell NBA Finals Most Valuable Player Award,NBA Finals Most Valuable Player award",
+          "Q298531,Q1501719,2008—> Q1501719,J. Walter Kennedy Citizenship Award,J. Walter Kennedy Citizenship Award"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q298531,Q1501719,2008—> Q1501719,J. Walter Kennedy Citizenship Award,J. Walter Kennedy Citizenship Award",
+      "operations": [],
+      "final_answer": "Q298531,Q1501719,2008—> Q1501719,J. Walter Kennedy Citizenship Award,J. Walter Kennedy Citizenship Award"
+    }
+  },
+  {
+    "qid": "Q9",
+    "question": "2010年NBA明星赛的三分球赛中，准率最高的球员的教练是谁？",
+    "answer": "Q4954288,Brad Stevens,Brad Stevens,United States of America,Indianapolis,English,male,22 October 1976,,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "2010年NBA明星赛的三分球赛中，准率最高的球员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15753220_7",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From 表2-15753220-7第1行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "他（所在队）的教练是？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From 图",
+          "Team节点",
+          "Q131371,Boston Celtics,Boston Celtics,1946,",
+          "Team—coach-->coach：",
+          "Q131371,Q4954288",
+          "Q4954288,Brad Stevens,Brad Stevens,United States of America,Indianapolis,English,male,22 October 1976,,"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q4954288,Brad Stevens,Brad Stevens,United States of America,Indianapolis,English,male,22 October 1976,,",
+      "operations": [],
+      "final_answer": "Q4954288,Brad Stevens,Brad Stevens,United States of America,Indianapolis,English,male,22 October 1976,,"
+    }
+  },
+  {
+    "qid": "Q10",
+    "question": "蝉联三年Adolph Rupp Trophy奖项的球员后来效力于哪些球队？",
+    "answer": "Q976396,Los Angeles Clippers,Los Angeles Clippers,1970,Los Angeles Lakers; Steve Ballmer",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "获得第一届Adolph Rupp Trophy奖项的球员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_1676727_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-1676727-2 第1、2、3行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "他曾效力于哪些球队？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q363246,Bill Walton",
+          "Player—playfor-->team",
+          "Q363246,Q131371,,,,",
+          "Q363246,Q167253,,,,",
+          "Q363246,Q976396,,,,",
+          "Team节点",
+          "Q131371,Boston Celtics,Boston Celtics,1946,",
+          "Q167253,Portland Trail Blazers,Portland Trail Blazers,1970,Paul Allen",
+          "Q976396,Los Angeles Clippers,Los Angeles Clippers,1970,Los Angeles Lakers; Steve Ballmer"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q976396,Los Angeles Clippers,Los Angeles Clippers,1970,Los Angeles Lakers; Steve Ballmer",
+      "operations": [],
+      "final_answer": "Q976396,Los Angeles Clippers,Los Angeles Clippers,1970,Los Angeles Lakers; Steve Ballmer"
+    }
+  },
+  {
+    "qid": "Q11",
+    "question": "于1998年获得North Carolina Sports Hall of Fame奖的教练在二十世纪初作为嘉宾（Color commentator）与哪些主持人一起点评Boston Celtics球队的电视转播？",
+    "answer": "Q555100,Cedric Maxwell",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "于1998年获得North Carolina Sports Hall of Fame奖的人有谁？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Award节点",
+          "Q41628143,North Carolina Sports Hall of Fame,",
+          "Player—recieveaward-->award：",
+          "Q555100,Q41628143,1998",
+          "Q2326948,Q41628143,1998"
+        ]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该人是教练吗？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player—assameas-->coach：",
+          "Q555100,Q555100",
+          "Player节点：",
+          "Q555100,Cedric Maxwell"
+        ]
+      },
+      {
+        "sqid": "SQ3",
+        "sq": "该人点评了几场Boston Celtics球队的电视转播？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_14902507_8",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-14902507-8全部"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 3,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ2",
+        "to": "SQ3",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q555100,Cedric Maxwell",
+      "operations": [],
+      "final_answer": "Q555100,Cedric Maxwell"
+    }
+  },
+  {
+    "qid": "Q12",
+    "question": "Cleveland Cavaliers队获得Best Breakthrough Athlete ESPY Award奖的队员负责的点位是？",
+    "answer": "Q212413,point guard,Point guard",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Cleveland Cavaliers队获得Best Breakthrough Athlete ESPY Award奖的队员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_10540109_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-10540109-1第12行（还可以在图数据库检索）"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该队员的点位是？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q36159,LeBron James",
+          "Player—playsposition-->position：",
+          "Q36159,Q212413",
+          "Position节点",
+          "Q212413,point guard,Point guard"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q212413,point guard,Point guard",
+      "operations": [],
+      "final_answer": "Q212413,point guard,Point guard"
+    }
+  },
+  {
+    "qid": "Q13",
+    "question": "蝉联三届Best NBA Player ESPY Awar的球队的教练是谁？",
+    "answer": "Q580808,Fred Hoiberg",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "蝉联三届Best NBA Player ESPY Awar的球队是哪支？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_10540109_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-10540109-1全部，计数"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该球队的教练是谁？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Team节点：",
+          "Q128109,Chicago Bulls,Chicago Bulls,1966,Dick Klein; Jerry Reinsdorf",
+          "Team—coachedby-->coach：",
+          "Q128109,Q580808",
+          "Coach节点：",
+          "Q580808,Fred Hoiberg"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q580808,Fred Hoiberg",
+      "operations": [],
+      "final_answer": "Q580808,Fred Hoiberg"
+    }
+  },
+  {
+    "qid": "Q14",
+    "question": "曾被Cleveland Cavaliers选中的Danny在NBA Finals' 3pt record中的最高累计命中率为多少？",
+    "answer": "Q555436,Q162990,（√）",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Danny是谁？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "from图",
+          "player节点（多个候选项）",
+          "Q555436,Danny Green,"
+        ]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "是否被Cleveland Cavaliers选中？（筛选）",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Q555436,Q162990,（√）"
+        ]
+      },
+      {
+        "sqid": "SQ3",
+        "sq": "该球员在NBA Finals' 3pt record中的最高累计命中率为多少",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17107550_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-17107550-1（对属性排序）"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 3,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      },
+      {
+        "from": "SQ2",
+        "to": "SQ3",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q555436,Q162990,（√）",
+      "operations": [],
+      "final_answer": "Q555436,Q162990,（√）"
+    }
+  },
+  {
+    "qid": "Q15_D",
+    "question": "Darvin Ham教练带领的队伍在1988年NBA总决赛抢7中成绩如何？",
+    "answer": "Q121783,Los Angeles Lakers",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Darvin Ham教练带领的队伍是？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Coach节点",
+          "Q2500405,Darvin Ham,",
+          "Team—coachedby-->coach：",
+          "Q121783,Q2500405",
+          "Team节点：",
+          "Q121783,Los Angeles Lakers"
+        ]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15664872_5",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-15664872-5 第14行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q121783,Los Angeles Lakers",
+      "operations": [],
+      "final_answer": "Q121783,Los Angeles Lakers"
+    }
+  },
+  {
+    "qid": "Q16_D",
+    "question": "Hakim Warrick被球队选走那个赛季的场均篮板数为多少？",
+    "answer": "Q165529,Memphis Grizzlies,Memphis Grizzlies,1995,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Hakim Warrick被球队选走是在哪年？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_1684650_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-1684650-1第4行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q1264436,Hakim Warrick,-->（属性：职业生涯开始年：2005）",
+          "Player—draftedby-->team",
+          "Q1264436,Q165529,",
+          "Team节点：",
+          "Q165529,Memphis Grizzlies,Memphis Grizzlies,1995,"
+        ]
+      }
+    ],
+    "hop": 1,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [],
+    "summary": {
+      "candidate_answer": "Q165529,Memphis Grizzlies,Memphis Grizzlies,1995,",
+      "operations": [],
+      "final_answer": "Q165529,Memphis Grizzlies,Memphis Grizzlies,1995,"
+    }
+  },
+  {
+    "qid": "Q17",
+    "question": "Houston Rockets球队K姓的4号球员在效力期间获得过什么奖嘛？",
+    "answer": "Q674359,All-NBA Team,All-NBA Team",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Houston Rockets球队B姓的4号球员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_11734041_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-11734041-2第5行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "效力期间得过什么奖？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Player节点",
+          "Q192707,Charles Barkley,",
+          "Player—recieveaward-->award：",
+          "Q192707,Q674359,1996",
+          "Award节点：",
+          "Q674359,All-NBA Team,All-NBA Team"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q674359,All-NBA Team,All-NBA Team",
+      "operations": [],
+      "final_answer": "Q674359,All-NBA Team,All-NBA Team"
+    }
+  },
+  {
+    "qid": "Q18",
+    "question": "被New York Knicks队伍在1947年首轮选中的成员有兼任教练吗？",
+    "answer": "（这个面向图的查询感觉略显牵强）",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "被New York Knicks队伍在1947年首轮选中的成员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17269615_4",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-17269615-4第一行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "成员也是一名教练吗？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q3706951,Dick Holub,",
+          "Player—assameas-->coach",
+          "Q3706951,Q3706951",
+          "coach节点",
+          "Q3706951,Dick Holub,Dick Holub,United States of America,Racine,English,male,29 October 1921,1947,1952",
+          "（这个面向图的查询感觉略显牵强）"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "（这个面向图的查询感觉略显牵强）",
+      "operations": [],
+      "final_answer": "（这个面向图的查询感觉略显牵强）"
+    }
+  },
+  {
+    "qid": "Q19",
+    "question": "Memphis Grizzlies于1995年首位选中的球员后来效力于哪个球队？",
+    "answer": "Q3307390,Vancouver Grizzlies,Vancouver Grizzlies,1995,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Memphis Grizzlies于1995年首位选中的球员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_16815697_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-16815697-2第1行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该球员后来效力于哪个球队？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q2308704,Bryant Reeves,",
+          "Player—playfor-->team",
+          "Q2308704,Q3307390,1995,2001,,",
+          "Team节点",
+          "Q3307390,Vancouver Grizzlies,Vancouver Grizzlies,1995,"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q3307390,Vancouver Grizzlies,Vancouver Grizzlies,1995,",
+      "operations": [],
+      "final_answer": "Q3307390,Vancouver Grizzlies,Vancouver Grizzlies,1995,"
+    }
+  },
+  {
+    "qid": "Q20",
+    "question": "James Harden2010-2010区间所在的球队在当季的季后赛中获得了第几名？",
+    "answer": "Q180950,Oklahoma City Thunder,Oklahoma City Thunder,2008; 1967,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "James Harden效力于哪个球队（条件：2010-2010区间）？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_18256220_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-18256220-1第2行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q136678,James Harden,",
+          "Player—playfor-->team",
+          "Q136678,Q180950,11 July 2009,27 October 2012,13,shooting guard",
+          "Team节点",
+          "Q180950,Oklahoma City Thunder,Oklahoma City Thunder,2008; 1967,"
+        ]
+      }
+    ],
+    "hop": 1,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [],
+    "summary": {
+      "candidate_answer": "Q180950,Oklahoma City Thunder,Oklahoma City Thunder,2008; 1967,",
+      "operations": [],
+      "final_answer": "Q180950,Oklahoma City Thunder,Oklahoma City Thunder,2008; 1967,"
+    }
+  },
+  {
+    "qid": "Q21",
+    "question": "同时荣获过Pro Football Hall of Fame和Canadian Football Hall of Fame的球员在1950年的NBA选秀中在第几轮被选中？",
+    "answer": "Q970476,Bud Grant,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "同时荣获过Pro Football Hall of Fame和Canadian Football Hall of Fame的球员是谁？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Award节点：",
+          "Q778412,Pro Football Hall of Fame,Pro Football Hall of Fame",
+          "Q3517653,Canadian Football Hall of Fame,Canadian Football Hall of Fame",
+          "Player—recievedaward-->award：",
+          "Q960594,Q778412,",
+          "Q970476,Q778412,",
+          "Q970476,Q3517653,",
+          "Player节点",
+          "Q970476,Bud Grant,"
+        ]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该球员在1950年的NBA选秀中在第几轮被选中",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_11157130_4",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-11157130-4 第8行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q970476,Bud Grant,",
+      "operations": [],
+      "final_answer": "Q970476,Bud Grant,"
+    }
+  },
+  {
+    "qid": "Q22",
+    "question": "Charlotte Hornets队在1988年NBA扩张选秀中的第八位选择对应的球员后来有获得什么荣誉吗？",
+    "answer": "Q918054,NBA Coach of the Year Award,NBA Coach of the Year Award",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Charlotte Hornets队在1988年NBA扩张选秀中的第八位选择对应的球员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17116053_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-17116053-1 第4行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该球员后来获得过什么荣誉？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q458065,Mike Brown,",
+          "Player—recieveaward-->award",
+          "Q458065,Q918054,2009",
+          "Award节点",
+          "Q918054,NBA Coach of the Year Award,NBA Coach of the Year Award"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q918054,NBA Coach of the Year Award,NBA Coach of the Year Award",
+      "operations": [],
+      "final_answer": "Q918054,NBA Coach of the Year Award,NBA Coach of the Year Award"
+    }
+  },
+  {
+    "qid": "Q23",
+    "question": "Miami Heat场均篮板数最高的赛季是效力于哪支队伍的？",
+    "answer": "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Miami Heat场均篮板数最高的赛季是哪年？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_1_2387461_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表1-2387461-1第3行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Miami Hea效力于哪支队伍？（条件：年份）",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Player节点",
+          "Q317527,Boris Diaw,",
+          "Player—playfor-->team",
+          "Q317527,Q164177,2005,2008,3,power forward",
+          "Team节点",
+          "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver",
+      "operations": [],
+      "final_answer": "Q164177,Phoenix Suns,Phoenix Suns,1968,Robert Sarver"
+    }
+  },
+  {
+    "qid": "Q23_D",
+    "question": "Erik Spoelstra教练所指导的队伍在1995年常规赛中状态最好时连胜了多少场？",
+    "answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Coach节点",
+          "Q440324,Erik Spoelstra,",
+          "Team—coachedby-->coach",
+          "Q169138,Q440324",
+          "Team节点",
+          "Q169138,Miami Heat,Miami Heat,1988,Micky Arison"
+        ]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17292579_3",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-17292579-3第14行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison",
+      "operations": [],
+      "final_answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison"
+    }
+  },
+  {
+    "qid": "Q25",
+    "question": "在2010年NBA全明星赛的创意扣篮赛中较高且来自Maine Red Claws球队的队员是被哪个球队选中的？",
+    "answer": "Q169165,Washington Wizards,Washington Wizards,1961,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_15753220_15",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-15753220-15第5行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q547758,Bill Walker,",
+          "Player—draftedby-->team",
+          "Q547758,Q169165,",
+          "Team节点",
+          "Q169165,Washington Wizards,Washington Wizards,1961,"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q169165,Washington Wizards,Washington Wizards,1961,",
+      "operations": [],
+      "final_answer": "Q169165,Washington Wizards,Washington Wizards,1961,"
+    }
+  },
+  {
+    "qid": "Q26",
+    "question": "获得最多次NBA Sportsmanship Award奖项的球员是被哪个球队选中的？",
+    "answer": "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_12211979_2",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-12211979-2"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q311895,Grant Hill,",
+          "Player—draftedby-->team",
+          "Q311895,Q169661,",
+          "Team节点",
+          "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,",
+      "operations": [],
+      "final_answer": "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,"
+    }
+  },
+  {
+    "qid": "Q27",
+    "question": "最近蝉联两届NBA All-Star Game Kobe Bryant Most Valuable Player Award的球员最好的一次三双成绩是怎样的？",
+    "answer": "Q196185,Russell Westbrook,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "蝉联两届NBA All-Star Game Kobe Bryant Most Valuable Player Award的球员是谁？",
+          "Award节点",
+          "Q31391,NBA All-Star Game Kobe Bryant Most Valuable Player Award,",
+          "Player—recievedaward-->award",
+          "Q196185,Q31391,2016",
+          "Q196185,Q31391,2015",
+          "Player节点",
+          "Q196185,Russell Westbrook,"
+        ]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_16555375_4",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-16555375-4第4行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q196185,Russell Westbrook,",
+      "operations": [],
+      "final_answer": "Q196185,Russell Westbrook,"
+    }
+  },
+  {
+    "qid": "Q28",
+    "question": "在2012 NBA Finals总决赛获得Best Championship Performance ESPY Award奖项的运动员效力于哪个球队？",
+    "answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "在2012 NBA Finals总决赛获得Best Championship Performance ESPY Award奖项的运动员是谁？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_11999396_1",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-11999396-1第8行"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该运动员效力于哪个球队？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "From图",
+          "Player节点",
+          "Q36159,LeBron James,",
+          "Player—playfor-->team：",
+          "Q36159,Q169138,10 July 2010,2014,6,power forward; small forward（年份筛选）",
+          "Team：",
+          "Q169138,Miami Heat,Miami Heat,1988,Micky Arison"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison",
+      "operations": [],
+      "final_answer": "Q169138,Miami Heat,Miami Heat,1988,Micky Arison"
+    }
+  },
+  {
+    "qid": "Q29",
+    "question": "Kareem Abdul-Jabbar盖帽数最高且非主场的一场比赛的主场队是哪个教练带队？",
+    "answer": "Q660606,Dwane Casey,",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Kareem Abdul-Jabbar盖帽数最高且非主场的一场比赛是哪个？",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_16899_3",
+            "sql": "",
+            "evidence": [
+              {
+                "text": "From表2-16899-3第一行"
+              },
+              {
+                "text": "==>该场的主场是队伍？"
+              }
+            ],
+            "answer": []
+          }
+        ],
+        "sq_answer": []
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "该主场球队的教练是哪个？",
+        "sources": [],
+        "sq_answer": [],
+        "notes": [
+          "Team节点",
+          "Q169661,Detroit Pistons,Detroit Pistons,1937; 1941,",
+          "Team—coachedby-->coach",
+          "Q169661,Q660606",
+          "Coach节点",
+          "Q660606,Dwane Casey,"
+        ]
+      }
+    ],
+    "hop": 2,
+    "type": [
+      "fact"
+    ],
+    "reasoning_path": [
+      {
+        "from": "SQ1",
+        "to": "SQ2",
+        "via": "intermediate"
+      }
+    ],
+    "summary": {
+      "candidate_answer": "Q660606,Dwane Casey,",
+      "operations": [],
+      "final_answer": "Q660606,Dwane Casey,"
+    }
+  }
+]

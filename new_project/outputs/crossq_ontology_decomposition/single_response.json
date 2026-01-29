@@ -1,0 +1,31 @@
+[
+  {
+    "qid": "Q_SINGLE",
+    "question": "Who won the NBA Most Valuable Player Award in 2022?",
+    "model": "gpt-4o-mini",
+    "parsed": {
+      "reasoning_path": [
+        "SQ1"
+      ],
+      "subquestions": [
+        {
+          "sqid": "SQ1",
+          "question": "Who won the NBA Most Valuable Player Award in 2022?",
+          "input_concept": [
+            "award",
+            "NBA Most Valuable Player Award"
+          ],
+          "output_concept": "player",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "receive",
+                "direction": "reverse"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

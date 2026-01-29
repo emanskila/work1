@@ -1,0 +1,78 @@
+{
+  "id": "2-15540335-1",
+  "page_title": "1981–82 Denver Nuggets season",
+  "section_title": "Draft picks",
+  "caption": "Draft picks",
+  "doc": {
+    "id": "2-15540335-1",
+    "rows": [
+      [
+        "2",
+        "34",
+        "Kenneth Green",
+        "United States",
+        "Texas-Pan American"
+      ],
+      [
+        "5",
+        "101",
+        "Willie Sims",
+        "United States",
+        "LSU"
+      ],
+      [
+        "6",
+        "124",
+        "Alonzo Weatherly",
+        "United States",
+        "University of Denver"
+      ],
+      [
+        "7",
+        "147",
+        "Greg Manning",
+        "United States",
+        "Maryland"
+      ],
+      [
+        "8",
+        "169",
+        "Curtis Redding",
+        "United States",
+        "St. John's"
+      ],
+      [
+        "9",
+        "191",
+        "Andrew Burton",
+        "United States",
+        "Austin Peay"
+      ],
+      [
+        "10",
+        "211",
+        "Derrick Rowland",
+        "United States",
+        "Potsdam State"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Nationality",
+      "School/Club Team"
+    ],
+    "caption": "Draft picks",
+    "page_id": 15540335,
+    "page_title": "1981–82 Denver Nuggets season",
+    "section_title": "Draft picks"
+  }
+}

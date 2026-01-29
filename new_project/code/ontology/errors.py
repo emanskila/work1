@@ -1,0 +1,2 @@
+class OntologyValidationError(ValueError):
+    pass

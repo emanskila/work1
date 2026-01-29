@@ -1,0 +1,106 @@
+{
+  "id": "2-14828499-1",
+  "page_title": "1982–83 Philadelphia 76ers season",
+  "section_title": "Draft picks",
+  "caption": "Draft picks",
+  "doc": {
+    "id": "2-14828499-1",
+    "rows": [
+      [
+        "1",
+        "22",
+        "Mark McNamara",
+        "United States",
+        "California"
+      ],
+      [
+        "2",
+        "36",
+        "J.J. Anderson",
+        "United States",
+        "Bradley"
+      ],
+      [
+        "2",
+        "45",
+        "Russ Schoene",
+        "United States",
+        "Tennessee-Chattanooga"
+      ],
+      [
+        "3",
+        "68",
+        "Dale Solomon",
+        "United States",
+        "Virginia Polytech"
+      ],
+      [
+        "4",
+        "91",
+        "Bruce Atkins",
+        "United States",
+        "Duquesne"
+      ],
+      [
+        "5",
+        "114",
+        "Donald Mason",
+        "United States",
+        "Frenso State"
+      ],
+      [
+        "6",
+        "137",
+        "Kevin Boyle",
+        "United States",
+        "Iowa"
+      ],
+      [
+        "7",
+        "160",
+        "Keith Hilliard",
+        "United States",
+        "Missouri State"
+      ],
+      [
+        "8",
+        "183",
+        "Donald Seals",
+        "United States",
+        "Jackson State"
+      ],
+      [
+        "9",
+        "204",
+        "George Melton",
+        "United States",
+        "Cheyney (PA)"
+      ],
+      [
+        "10",
+        "224",
+        "Randy Burkert",
+        "United States",
+        "Drexel"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Player",
+      "Nationality",
+      "School/Club Team"
+    ],
+    "caption": "Draft picks",
+    "page_id": 14828499,
+    "page_title": "1982–83 Philadelphia 76ers season",
+    "section_title": "Draft picks"
+  }
+}

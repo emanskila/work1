@@ -1,0 +1,16 @@
+[
+  {
+    "qid": "80c2e131-7403-46d9-badc-8a0243f47482",
+    "question": "Named for it's proximity to the local NBA team, what is the name of the WNBA team in Phoenix?",
+    "answer": "13 July 1964",
+    "provenance_doc": {
+      "paragraphs": [
+        {
+          "wikipedia_title": "Dwyane Wade",
+          "paragraph_id": 0,
+          "text": "Dwyane Wade is a former professional basketball player who played for the Chicago Bulls and wore jersey number 3."
+        }
+      ]
+    }
+  }
+]

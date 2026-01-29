@@ -1,0 +1,55 @@
+{
+  "source": {
+    "type": "graph",
+    "base_dir": "data/new_follow_ontology/graph"
+  },
+  "concept_mappings": {
+    "player": {
+      "file": "Player.csv"
+    },
+    "team": {
+      "file": "Team.csv"
+    },
+    "coach": {
+      "file": "Coach.csv"
+    },
+    "award": {
+      "file": "Award.csv"
+    },
+    "division": {
+      "file": "Division.csv"
+    },
+    "position": {
+      "file": "Position.csv"
+    },
+    "venue": {
+      "file": "Venue.csv"
+    }
+  },
+  "relation_mappings": {
+    "playfor": {
+      "file": "relation_playsFor.csv"
+    },
+    "draftby": {
+      "file": "relation_draftedBy.csv"
+    },
+    "coachedby": {
+      "file": "relation_coachedBy.csv"
+    },
+    "receive": {
+      "file": "relation_receivesAward.csv"
+    },
+    "playsposition": {
+      "file": "relation_playsPosition.csv"
+    },
+    "partofdivision": {
+      "file": "relation_partOfDivision.csv"
+    },
+    "hashomevenue": {
+      "file": "relation_hasHomeVenue.csv"
+    },
+    "issameas": {
+      "file": "relation_isSameAs.csv"
+    }
+  }
+}

@@ -1,0 +1,255 @@
+查询1：
+"qid": "80c2e131-7403-46d9-badc-8a0243f47482",
+    "question": "What is the sport team number of Dwyane Wade who is a member of the Chicago Bulls?",
+    "answer": "3",
+
+面向文档数据：
+run_doc_discovery.py
+==================================================
+生成的答案：
+==================================================
+
+问题 1: What is the sport team number of Dwyane Wade who is a member of the Chicago Bulls?
+答案: The sport team number of Dwyane Wade, who is a member of the Chicago Bulls, is number 3.
+检索到的文档: ['Dwyane Wade', '2016–17 Chicago Bulls season', '2016–17 Miami Heat season', 'Chicago Bulls', '2019–20 Miami Heat season', '2018–19 Miami Heat season', 'Big Three (Miami Heat)', '2011–12 Chicago Bulls season', '2017–18 Miami Heat season', 'Chris Bosh', 'Miami Heat', 'Bulls–Heat rivalry', '2017–18 Chicago Bulls season', '2010–11 Chicago Bulls season', '2015–16 Chicago Bulls season', '2013–14 Chicago Bulls season', '2018–19 Chicago Bulls season', '1998–99 Chicago Bulls season', 'Ömer Aşık', '1995–96 Chicago Bulls season']
+==================================================
+
+面向图数据：
+
+
+
+查询2：
+"qid": "4e466017-c877-47f1-96ab-009b5d995531",
+ "question": "When did Kareem Abdul-Jabbar start being a member of Milwaukee Bucks?",
+"answer": "1969"
+
+面向文档数据：
+run_doc_discovery.py
+==================================================
+生成的答案：
+==================================================
+
+问题 1: When did Kareem Abdul-Jabbar start being a member of Milwaukee Bucks?
+答案: Kareem Abdul-Jabbar started being a member of the Milwaukee Bucks in the 1969 NBA draft, where he was drafted with the first overall pick by the Bucks franchise.
+检索到的文档: ['Milwaukee Bucks', 'Kareem Abdul-Jabbar', '1975–76 Milwaukee Bucks season', '1974–75 Milwaukee Bucks season', '1970–71 Milwaukee Bucks season', '1971–72 Milwaukee Bucks season', '1975–76 Los Angeles Lakers season', '1980–81 Milwaukee Bucks season', '1968–69 Milwaukee Bucks season', '2018–19 Milwaukee Bucks season', 'Fiserv Forum', '2015–16 Milwaukee Bucks season', '1979–80 Milwaukee Bucks season', '2017–18 Milwaukee Bucks season', 'Otis Howard', '1954–55 Milwaukee Hawks season', 'Giannis Antetokounmpo', '2019–20 Milwaukee Bucks season', '1968 NBA expansion draft', 'Khris Middleton']
+==================================================
+
+
+查询3：
+"qid": "cc6acb0e-d7fc-4176-bee3-98b21161ba02",
+"question": "What is the mass of Tim Duncan(the one that belongs to United States of America) ?",
+"answer": "113 kilogram",
+
+面向文档数据：
+run_doc_discovery.py
+==================================================
+生成的答案：
+==================================================
+
+问题 1: What is the mass of Tim Duncan(the one that belongs to United States of America) ?
+答案: Tim Duncan's mass is not provided in the context information.（源选择也仅仅是源选择，该源并不一定能提供答案）
+检索到的文档: ['Tim Duncan', 'Irv Kiffin', 'Gerard King', 'Twin Towers (San Antonio Spurs)', 'Manu Ginóbili', 'Tim Hardaway', 'Leandro Barbosa', '2003 NBA Finals', 'Kelly McCarty', '1998–99 San Antonio Spurs season', 'Marcus Brown', 'Mickaël Piétrus', 'Gregg Popovich', 'Michael Stewart (basketball)', 'Jason Sasser', 'Steve Kerr', 'TD Garden', 'Tim Kempton', 'The Forum (Inglewood, California)', 'Arvydas Sabonis']
+==================================================
+
+
+查询4：
+"qid": "f1403599-09bb-441a-840d-8d68b964783d",
+"question": "Is Robert Smith a member of Utah Jazz?",
+"answer": "yes",
+
+面向图数据：
+run_answer_gen_graph.py
+"model_response": "Yes, Robert Smith is a member of the Utah Jazz.",
+    "model_provenance": {
+      "graph": {
+        "cypher": "MATCH (p:Player {name: 'Robert Smith'})-[r:playsFor]->(t:Team {name: 'Utah Jazz'}) RETURN p.name",
+        "graph_str": "[{'p.name': 'Robert Smith'}]",
+        "node_ids": [
+          2428,
+          1389
+        ],
+        "edge_ids": [
+          11489
+        ]
+      }
+    }
+
+面向文档数据：
+run_doc_discovery.py
+==================================================
+生成的答案：
+==================================================
+
+问题 1: Is Robert Smith a member of Utah Jazz?
+答案: No, Robert Smith is not a member of the Utah Jazz.（答案是错误的！只面向第一个文本进行查询，查找不到答案）
+检索到的文档: ['Robert Smith (basketball)', 'Utah Jazz', 'Bobby Smith (basketball)', 'Randy Rigby', 'Al Smith (basketball)', 'Sam Smith (basketball, born 1955)', 'Doug Smith (basketball)', 'J. R. Smith', 'Raül López', 'Josh Smith', 'Charles Smith (basketball, born 1967)', 'Bojan Bogdanović', "Royce O'Neale", 'Jason Smith (basketball, born 1986)', 'Raymond Brown (basketball)', 'Rob Williams (basketball)', 'Quin Snyder', 'Robert Hite', 'List of Utah Jazz head coaches', 'Elmore Smith']
+==================================================
+
+面向表格数据：
+run_table_discovery.py
+"model_response": "Based on the query results, it appears that there is no player named Robert Smith listed as a member of the Utah Jazz.",（答案错误，因为只面向检索相似度最高的表查询，t_1_11545282_18表中才有答案）
+    "model_provenance": {
+      "tables": {
+        "retrieved": [
+          "t_1_11545282_17",
+          "t_1_11545282_7",
+          "t_1_11545282_6",
+          "t_1_11545282_12",
+          "t_1_11545282_19",
+          "t_1_11545282_18",
+          "t_1_11545282_11",
+          "t_1_11545282_4",
+          "t_1_11545282_10",
+          "t_1_11545282_5",
+          "t_2_11964263_5",
+          "t_2_11545282_17",
+          "t_2_11545282_13",
+          "t_2_17382296_6",
+          "t_2_11545282_3",
+          "t_2_11545282_15",
+          "t_2_11545282_12",
+          "t_2_11545282_6",
+          "t_2_11545282_21",
+          "t_2_11545282_19"
+        ],
+        "sql": "SELECT player FROM t_1_11545282_17 WHERE player = 'Robert Smith';",
+        "sql_columns": [
+          "player"
+        ],
+        "sql_tables": [
+          "t_1_11545282_17"
+        ]
+      }
+    }
+
+
+
+
+查询5：
+"qid": "bc1fecba-f856-4369-baf6-1cb9a24d9cc0",
+"question": "What team was LeBron James drafted by in the 2003 NBA Draft?",
+"answer": "Cleveland Cavaliers"
+
+面向文档数据：
+run_doc_discovery.py
+==================================================
+生成的答案：
+==================================================
+
+问题 1: What team was LeBron James drafted by in the 2003 NBA Draft?
+答案: The Cleveland Cavaliers.
+检索到的文档: ['2003 NBA draft', '2003–04 Cleveland Cavaliers season', 'LeBron James', 'James Jones (basketball player)', 'Cleveland Cavaliers', 'J. R. Smith', '2014–15 Cleveland Cavaliers season', '2014 NBA draft', '2015 NBA draft', '2009 NBA draft', '2004 NBA draft', 'Big Three (Miami Heat)', '2014–15 NBA season', 'The Decision (TV program)', '2003–04 Detroit Pistons season', '2006–07 Cleveland Cavaliers season', '2004 NBA expansion draft', 'James Young (basketball)', '1983 NBA draft', '2010–11 Cleveland Cavaliers season']
+==================================================
+
+
+
+
+
+
+面向doc的问题
+查询1
+
+面向文档数据：
+==================================================
+生成的答案：
+==================================================
+
+问题 1: Named for it's proximity to the local NBA team, what is the name of the WNBA team in Phoenix?
+答案: Phoenix Mercury（正确）
+检索到的文档: ['Phoenix Mercury', 'Phoenix Suns', 'Las Vegas Aces', '2014 WNBA All-Star Game', '2008 WNBA season', 'Portland Fire', '2000 WNBA All-Star Game', 'Chicago Sky', "Women's National Basketball Association", '2010 WNBA season', '2014 WNBA Finals', 'Orlando Miracle', 'Utah Starzz', '2009 Phoenix Mercury season', 'Miami Sol', 'Indiana Fever', 'Diana Taurasi', 'Charlotte Sting', '2010 Phoenix Mercury season', '2012 Phoenix Mercury season']
+==================================================
+
+面向表格数据：
+"model_response": "There is no WNBA team in Phoenix named after the local NBA team, the Phoenix Suns.",（没查找到信息！其实是有的，wnba team=Phoenix Mercury）（很多其实都是在一个属性值，包含了位置+球队名）
+    "model_provenance": {
+      "tables": {
+        "retrieved": [
+          "t_2_14122892_3",
+          "t_2_17121661_6",
+          "t_1_13082900_1",
+          "t_2_11482079_6",
+          "t_2_11482079_8",
+          "t_2_11482079_16",
+          "t_2_11482079_3",
+          "t_2_11482079_10",
+          "t_2_11482079_12",
+          "t_2_11482079_7",
+          "t_2_13082900_1",
+          "t_2_11482079_20",
+          "t_2_11482079_17",
+          "t_2_11482079_13",
+          "t_2_11482079_4",
+          "t_2_179829_7",
+          "t_2_11482079_2",
+          "t_1_30047613_14",
+          "t_1_30047613_13",
+          "t_1_30047613_12"
+        ],
+        "sql": "SELECT \"wnba team\"  FROM t_2_14122892_3  WHERE \"school/club team\" = 'Phoenix Suns';",
+        "sql_columns": [
+          "wnba team",
+          "school/club team"
+        ],
+        "sql_tables": [
+          "t_2_14122892_3"
+        ]
+      }
+
+
+查询2：
+In which American city do the 'Wizards' play Basketball?
+
+面向表格查询：
+"model_response": "The Washington Wizards play basketball in Washington, D.C.",（答对了）
+    "model_provenance": {
+      "tables": {
+        "retrieved": [
+          "t_2_17311812_8",
+          "t_2_17311812_7",
+          "t_1_23274514_9",
+          "t_1_23274514_8",
+          "t_1_23274514_7",
+          "t_1_23274514_5",
+          "t_1_23274514_4",
+          "t_1_23274514_6",
+          "t_1_27721131_8",
+          "t_1_17311812_8",
+          "t_1_17311812_7",
+          "t_2_17311812_9",
+          "t_1_27721131_11",
+          "t_1_27721131_7",
+          "t_1_27721131_2",
+          "t_2_11962021_9",
+          "t_1_27721131_6",
+          "t_1_27721131_10",
+          "t_2_17311812_6",
+          "t_2_17311812_5"
+        ],
+        "sql": "SELECT DISTINCT location FROM t_2_17311812_8 WHERE team = 'Wizards';",
+        "sql_columns": [
+          "team"
+        ],
+        "sql_tables": [
+          "t_2_17311812_8"
+        ]
+      }
+
+
+面向图数据：（查询语句为精匹配，而非模糊匹配）
+"model_response": "The information provided does not specify the American city where the 'Wizards' play basketball.",（没有找到信息！其实是有的，Q169165,Washington Wizards,Washington Wizards,1961,-->Q169165,Q223240,1997,-->Q223240,Capital One Arena,Capital One Arena）
+    "model_provenance": {
+      "graph": {
+        "cypher": "MATCH (t:Team)-[hv:hasHomeVenue]->(v:Venue) WHERE toLower(t.name) = 'wizards' RETURN v.name",
+        "graph_str": "[]",
+        "node_ids": [],
+        "edge_ids": []
+      }
+    }
+
+
+
+
+
+
+
+

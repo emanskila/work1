@@ -1,0 +1,154 @@
+[
+  {
+    "qid": "Q1",
+    "question": "Which teams did the players selected by the Pittsburgh Ironmen in the 1947 BAA later play for?",
+    "model": "gpt-4o-mini",
+    "parsed": {
+      "ontology_chain": {
+        "concepts": [
+          "team",
+          "player"
+        ],
+        "relations": [
+          "draftby",
+          "playfor"
+        ]
+      },
+      "reasoning_path": [
+        "SQ1",
+        "SQ2"
+      ],
+      "concepts": {
+        "involved": [
+          "team",
+          "player"
+        ],
+        "instantiated": [
+          {
+            "concept": "team",
+            "instance": "Pittsburgh Ironmen",
+            "from_text": "Pittsburgh Ironmen"
+          },
+          {
+            "concept": "game",
+            "instance": "1947 BAA",
+            "from_text": "1947 BAA"
+          }
+        ],
+        "target": [
+          "team"
+        ]
+      },
+      "subquestions": [
+        {
+          "sqid": "SQ1",
+          "question": "Which players were drafted by the Pittsburgh Ironmen in the 1947 BAA?",
+          "input_concept": "team",
+          "output_concept": "player",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "draftby",
+                "direction": "reverse"
+              }
+            ]
+          }
+        },
+        {
+          "sqid": "SQ2",
+          "question": "Which teams did those players later play for?",
+          "input_concept": "player",
+          "output_concept": "team",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "playfor",
+                "direction": "forward"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "raw": "{\n  \"ontology_chain\": {\n    \"concepts\": [\"team\", \"player\"],\n    \"relations\": [\"draftby\", \"playfor\"]\n  },\n  \"reasoning_path\": [\"SQ1\", \"SQ2\"],\n  \"concepts\": {\n    \"involved\": [\"team\", \"player\"],\n    \"instantiated\": [\n      {\"concept\": \"team\", \"instance\": \"Pittsburgh Ironmen\", \"from_text\": \"Pittsburgh Ironmen\"},\n      {\"concept\": \"game\", \"instance\": \"1947 BAA\", \"from_text\": \"1947 BAA\"}\n    ],\n    \"target\": [\"team\"]\n  },\n  \"subquestions\": [\n    {\n      \"sqid\": \"SQ1\",\n      \"question\": \"Which players were drafted by the Pittsburgh Ironmen in the 1947 BAA?\",\n      \"input_concept\": \"team\",\n      \"output_concept\": \"player\",\n      \"ontology\": {\n        \"relations\": [\n          {\"relation_id\": \"draftby\", \"direction\": \"reverse\"}\n        ]\n      }\n    },\n    {\n      \"sqid\": \"SQ2\",\n      \"question\": \"Which teams did those players later play for?\",\n      \"input_concept\": \"player\",\n      \"output_concept\": \"team\",\n      \"ontology\": {\n        \"relations\": [\n          {\"relation_id\": \"playfor\", \"direction\": \"forward\"}\n        ]\n      }\n    }\n  ]\n}"
+  },
+  {
+    "qid": "Q2",
+    "question": "How did the team that John Havlicek played for perform in the 1963 NBA Finals?",
+    "model": "gpt-4o-mini",
+    "parsed": {
+      "ontology_chain": {
+        "concepts": [
+          "team",
+          "game"
+        ],
+        "relations": [
+          "playfor",
+          "attend"
+        ]
+      },
+      "reasoning_path": [
+        "SQ1",
+        "SQ2"
+      ],
+      "concepts": {
+        "involved": [
+          "player",
+          "team",
+          "game"
+        ],
+        "instantiated": [
+          {
+            "concept": "player",
+            "instance": "John Havlicek",
+            "from_text": "John Havlicek"
+          },
+          {
+            "concept": "team",
+            "instance": "team that John Havlicek played for",
+            "from_text": "the team that John Havlicek played for"
+          },
+          {
+            "concept": "game",
+            "instance": "1963 NBA Finals",
+            "from_text": "1963 NBA Finals"
+          }
+        ],
+        "target": [
+          "game"
+        ]
+      },
+      "subquestions": [
+        {
+          "sqid": "SQ1",
+          "question": "Which team did John Havlicek play for?",
+          "input_concept": "player",
+          "output_concept": "team",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "playfor",
+                "direction": "forward"
+              }
+            ]
+          }
+        },
+        {
+          "sqid": "SQ2",
+          "question": "How did the team perform in the 1963 NBA Finals?",
+          "input_concept": "team",
+          "output_concept": "game",
+          "ontology": {
+            "relations": [
+              {
+                "relation_id": "attend",
+                "direction": "forward"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "raw": "{\n  \"ontology_chain\": {\n    \"concepts\": [\"team\", \"game\"],\n    \"relations\": [\"playfor\", \"attend\"]\n  },\n  \"reasoning_path\": [\"SQ1\", \"SQ2\"],\n  \"concepts\": {\n    \"involved\": [\"player\", \"team\", \"game\"],\n    \"instantiated\": [\n      {\"concept\": \"player\", \"instance\": \"John Havlicek\", \"from_text\": \"John Havlicek\"},\n      {\"concept\": \"team\", \"instance\": \"team that John Havlicek played for\", \"from_text\": \"the team that John Havlicek played for\"},\n      {\"concept\": \"game\", \"instance\": \"1963 NBA Finals\", \"from_text\": \"1963 NBA Finals\"}\n    ],\n    \"target\": [\"game\"]\n  },\n  \"subquestions\": [\n    {\n      \"sqid\": \"SQ1\",\n      \"question\": \"Which team did John Havlicek play for?\",\n      \"input_concept\": \"player\",\n      \"output_concept\": \"team\",\n      \"ontology\": {\n        \"relations\": [\n          {\"relation_id\": \"playfor\", \"direction\": \"forward\"}\n        ]\n      }\n    },\n    {\n      \"sqid\": \"SQ2\",\n      \"question\": \"How did the team perform in the 1963 NBA Finals?\",\n      \"input_concept\": \"team\",\n      \"output_concept\": \"game\",\n      \"ontology\": {\n        \"relations\": [\n          {\"relation_id\": \"attend\", \"direction\": \"forward\"}\n        ]\n      }\n    }\n  ]\n}"
+  }
+]

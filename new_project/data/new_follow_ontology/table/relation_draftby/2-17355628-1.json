@@ -1,0 +1,71 @@
+{
+  "id": "2-17355628-1",
+  "page_title": "2008–09 Oklahoma City Thunder season",
+  "section_title": "Draft picks",
+  "caption": "Draft picks",
+  "doc": {
+    "id": "2-17355628-1",
+    "rows": [
+      [
+        "1",
+        "4",
+        "Guard",
+        "United States",
+        "UCLA"
+      ],
+      [
+        "1",
+        "24",
+        "Forward",
+        "Republic of the Congo",
+        "CB L'Hospitalet"
+      ],
+      [
+        "2",
+        "32",
+        "Forward",
+        "United States",
+        "UAB"
+      ],
+      [
+        "2",
+        "46",
+        "Forward",
+        "United States",
+        "BYU Jr."
+      ],
+      [
+        "2",
+        "50",
+        "Center",
+        "United States",
+        "California"
+      ],
+      [
+        "2",
+        "56",
+        "Center",
+        "Russia",
+        "Kansas"
+      ]
+    ],
+    "types": [
+      "real",
+      "real",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Round",
+      "Pick",
+      "Position",
+      "Nationality",
+      "College/Team"
+    ],
+    "caption": "Draft picks",
+    "page_id": 17355628,
+    "page_title": "2008–09 Oklahoma City Thunder season",
+    "section_title": "Draft picks"
+  }
+}

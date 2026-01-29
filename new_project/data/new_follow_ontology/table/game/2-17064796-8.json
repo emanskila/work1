@@ -1,0 +1,71 @@
+{
+  "id": "2-17064796-8",
+  "page_title": "1975–76 Buffalo Braves season",
+  "section_title": "Season schedule",
+  "caption": "Season schedule",
+  "doc": {
+    "id": "2-17064796-8",
+    "rows": [
+      [
+        "78",
+        "April 2",
+        "Atlanta Hawks",
+        "101–93",
+        "43–35",
+        "Win 1"
+      ],
+      [
+        "79",
+        "April 4",
+        "@ Boston Celtics",
+        "117–114",
+        "44–35",
+        "Win 2"
+      ],
+      [
+        "80",
+        "April 6",
+        "New York Knicks",
+        "102–106",
+        "44–36",
+        "Loss 1"
+      ],
+      [
+        "81",
+        "April 8",
+        "@ New York Knicks",
+        "105–98",
+        "45–36",
+        "Win 1"
+      ],
+      [
+        "82",
+        "April 11",
+        "Kansas City Kings",
+        "99–98",
+        "46–36",
+        "Win 2"
+      ]
+    ],
+    "types": [
+      "real",
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Game",
+      "Date",
+      "Team",
+      "Score",
+      "Record",
+      "Streak"
+    ],
+    "caption": "Season schedule",
+    "page_id": 17064796,
+    "page_title": "1975–76 Buffalo Braves season",
+    "section_title": "Season schedule"
+  }
+}

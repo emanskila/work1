@@ -1,0 +1,179 @@
+[
+  {
+    "qid": "Q1",
+    "hop": 2,
+    "type": ["fact","exclude"],
+    "question": "Which teams did the players selected by the Pittsburgh Ironmen in the 1947 BAA later play for?",
+    "answer": ["New York Knicks","Baltimore Bullets","Detroit Pistons"],
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Who were the players selected by the Pittsburgh Ironmen in the 1947 BAA?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_12093318_3",
+            "sql": "SELECT Player FROM t_2_12093318_3 WHERE Team = 'Pittsburgh Ironmen';",
+            "evidence": [
+              {
+                "row": 1,
+                "columns": ["Round", "Pick", "Player", "Position", "Team", "College"],
+                "values": ["1", "1", "Clifton McNeely", "–", "Pittsburgh Ironmen", "Texas Wesleyan"]
+              }
+            ],
+            "answer": ["Clifton McNeely"]
+          },
+          {
+            "modality": "table",
+            "source": "t_2_12093318_4",
+            "sql": "SELECT Player FROM t_2_12093318_4 WHERE Team = 'Pittsburgh Ironmen';",
+            "evidence": [
+              {
+                "row": 9,
+                "columns": ["Round", "Player", "Position", "Team", "College"],
+                "values": ["–", "Paul Hoffman", "G/F", "Toronto Huskies", "Purdue"]
+              },
+              {
+                "row": 21,
+                "columns": ["Round", "Player", "Position", "Team", "College"],
+                "values": ["–", "Red Rocha", "F/C", "Toronto Huskies", "Oregon State"]
+              }
+            ],
+            "answer": ["Paul Hoffman","Red Rocha"]
+          }
+        ],
+        "sq_answer": ["Clifton McNeely","Paul Hoffman","Red Rocha"]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "Which teams did these players play for?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "player —playfor→ team",
+            "evidence": [
+              {
+                "step1": "head",
+                "description": "Take the answers from the previous hop (SQ1) as head nodes.",
+                "nodes": [
+                  {"qid": "Q2438533", "name": "Clifton McNeely"},
+                  {"qid": "Q1622629", "name": "Paul Hoffman"},
+                  {"qid": "Q2328645", "name": "Red Rocha"}
+                ],
+                "step1_answer": ["Q2438533","Q1622629","Q2328645"]
+              },
+              {
+                "step2": "relation",
+                "description": "Query the 'playfor' relation.",
+                "relation": "playfor",
+                "edges": [
+                  {"triple": ["Q2438533", "playfor", null]},
+                  {"triple": ["Q1622629", "playfor", "Q131364"]},
+                  {"triple": ["Q1622629", "playfor", "Q2928124"]},
+                  {"triple": ["Q2328645", "playfor", "Q169661"]}
+                ],
+                "step2_answer": ["Q131364","Q2928124","Q169661"]
+              },
+              {
+                "step3": "tail",
+                "description": "Collect tail nodes (teams).",
+                "nodes": [
+                  {"qid": "Q131364", "name": "New York Knicks"},
+                  {"qid": "Q2928124", "name": "Baltimore Bullets"},
+                  {"qid": "Q169661", "name": "Detroit Pistons"}
+                ],
+                "step3_answer": ["New York Knicks","Baltimore Bullets","Detroit Pistons"]
+              }
+            ],
+            "answer": ["New York Knicks","Baltimore Bullets","Detroit Pistons"]
+          }
+        ],
+        "sq_answer": ["New York Knicks","Baltimore Bullets","Detroit Pistons"]
+      }
+    ],
+    "reasoning_path": [{"from": "SQ1", "to": "SQ2", "via": "players"}],
+    "summary": {
+      "candidate_answer": ["New York Knicks","Baltimore Bullets","Detroit Pistons"],
+      "operations": [
+        {"op": "exclude", "on": "candidate_answer", "by": "value", "values": ["Pittsburgh Ironmen"]}
+      ],
+      "final_answer": ["New York Knicks","Baltimore Bullets","Detroit Pistons"]
+    }
+  },
+  {
+    "qid": "Q2",
+    "hop": 2,
+    "type": ["fact","descrip"],
+    "question": "How did the team that John Havlicek played for perform in the 1963 NBA Finals?",
+    "answer": "Boston Celtics won 4:1 against San Francisco",
+    "decomposition": [
+      {
+        "sqid": "SQ1",
+        "sq": "Which team did John Havlicek play for?",
+        "sources": [
+          {
+            "modality": "graph",
+            "source": "player —playfor→ team",
+            "evidence": [
+              {
+                "step1": "head",
+                "description": "Use John Havlicek as head node.",
+                "nodes": [
+                  {"qid": "Q71127", "name": "John Havlicek"}
+                ],
+                "step1_answer": ["Q71127"]
+              },
+              {
+                "step2": "relation",
+                "description": "Query the 'playfor' relation.",
+                "relation": "playfor",
+                "edges": [
+                  {"triple": ["Q71127", "playfor", "Q131371"]}
+                ],
+                "step2_answer": ["Q131371"]
+              },
+              {
+                "step3": "tail",
+                "description": "Collect tail nodes (teams).",
+                "nodes": [
+                  {"qid": "Q131371", "name": "Boston Celtics"}
+                ],
+                "step3_answer": ["Boston Celtics"]
+              }
+            ],
+            "answer": ["Boston Celtics"]
+          }
+        ],
+        "sq_answer": ["Boston Celtics"]
+      },
+      {
+        "sqid": "SQ2",
+        "sq": "How did the team perform in the 1963 NBA Finals?",
+        "sources": [
+          {
+            "modality": "table",
+            "source": "t_2_17063996_4",
+            "sql": "SELECT Game, Data, [Home Team], Result, [Road Team] FROM t_2_17063996_4 WHERE [Home Team] = 'Boston Celtics' OR [Road Team] = 'Boston Celtics' OR [Home Team] = 'Boston' OR [Road Team] = 'Boston';",
+            "evidence": [
+              {
+                "row": 1,
+                "columns": ["Game", "Data", "Home Team", "Result", "Road Team"],
+                "values": ["Game 1", "April 18", "Boston", "108-96", "San Francisco"]
+              }
+            ],
+            "answer": [["Game 1", "April 18", "Boston", "108-96", "San Francisco"]]
+          }
+        ],
+        "sq_answer": [["Game 1", "April 18", "Boston", "108-96", "San Francisco"]]
+      }
+    ],
+    "reasoning_path": [{"from": "SQ1", "to": "SQ2", "via": "team"}],
+    "summary": {
+      "candidate_answer": [["Game 1", "April 18", "Boston", "108-96", "San Francisco"]],
+      "operations": [
+        {"op": "descrip", "on": "candidate_answer"}
+      ],
+      "final_answer": "Boston Celtics won 4:1 against San Francisco"
+    }
+  }
+]

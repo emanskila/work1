@@ -1,0 +1,13 @@
+[{
+  "qid": "0bbeae6f-90c9-4a11-a39b-915b1d97b111",
+  "question": "which team did Michael Jordan play for?",
+  "answer": "13 July 1964",
+  "provenance_graph": {
+    "cypher": "MATCH (p:Player {name: 'Michael Jackson', place_of_birth: 'Fairfax'}) RETURN p.date_of_birth AS date_of_birth",
+    "node_ids": [
+      2201
+    ],
+    "edge_ids": [],
+    "type": "point"
+  }
+}]

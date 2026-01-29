@@ -1,0 +1,78 @@
+{
+  "id": "2-18027278-5",
+  "page_title": "1954–55 Syracuse Nationals season",
+  "section_title": "NBA finals",
+  "caption": "NBA finals",
+  "doc": {
+    "id": "2-18027278-5",
+    "rows": [
+      [
+        "Game 1",
+        "March 31",
+        "Syracuse",
+        "86-82",
+        "Fort Wayne"
+      ],
+      [
+        "Game 2",
+        "April 2",
+        "Syracuse",
+        "87-84",
+        "Fort Wayne"
+      ],
+      [
+        "Game 3",
+        "April 3",
+        "Fort Wayne",
+        "96-89",
+        "Syracuse"
+      ],
+      [
+        "Game 4",
+        "April 5",
+        "Fort Wayne",
+        "109-82",
+        "Syracuse"
+      ],
+      [
+        "Game 5",
+        "April 7",
+        "Fort Wayne",
+        "74-71",
+        "Syracuse"
+      ],
+      [
+        "Game 6",
+        "April 9",
+        "Syracuse",
+        "109-104",
+        "Fort Wayne"
+      ],
+      [
+        "Game 7",
+        "April 10",
+        "Syracuse",
+        "92-91",
+        "Fort Wayne"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Game",
+      "Date",
+      "Home Team",
+      "Result",
+      "Road Team"
+    ],
+    "caption": "NBA finals",
+    "page_id": 18027278,
+    "page_title": "1954–55 Syracuse Nationals season",
+    "section_title": "NBA finals"
+  }
+}

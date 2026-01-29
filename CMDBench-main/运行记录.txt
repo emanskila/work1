@@ -1,0 +1,40 @@
+开机（用cmd终端运行）
+进conda
+
+docker激活
+(cmdbench) D:\>cd D:\AAA-work1\CMDBench-main\CMDBench-main\docker\compose
+打开桌面docker
+docker compose up -d
+(docker compose down)
+(docker compose ps)
+
+set配置环境
+set OPENAI_API_KEY='sk-xxx'
+set OPENAI_BASE_URL="https://api.chatanywhere.tech/v1"
+set NEO4J_USERNAME=neo4j
+set NEO4J_PASSWORD=cmdbench
+set PGUSER=megagon
+
+$env:OPENAI_API_KEY='sk-xxx'
+$env:OPENAI_BASE_URL="https://api.chatanywhere.tech/v1"
+$env:NEO4J_USERNAME="neo4j"
+$env:NEO4J_PASSWORD="cmdbench"
+$env:PGUSER="megagon"
+
+
+进入task 测试连接
+cd D:\AAA-work1\CMDBench-main\CMDBench-main\tasks
+(cmdbench) D:\AAA-work1\CMDBench-main\CMDBench-main\tasks>
+python test_connectivity.py
+
+运行代码
+(cmdbench) D:\AAA-work1\CMDBench-main\CMDBench-main>
+！需要改api设置（改代码，参考doc_discovery）
+Settings.llm = OpenAI(
+        temperature=0,
+        model=llm,
+        api_base=openai_base_url,   # 关键：显式指定
+        api_key=openai_api_key,     # 关键：显式指定
+    )
+
+python .\test_result_isnot_equal\run_doc_discovery.py --mode doc --inputs .\benchmark\q_doc_single1.json --output_dir .\outputs\test_doc_discovery\ --overwrite --retriever "BAAI/bge-base-en-v1.5" --doc_top_k 20 --openai_api_key "sk-FGHIXlyPYpUGzovjKzG7UYv7J7vfJYevqKsEf8o3EryiuiCA" --openai_base_url "https://api.chatanywhere.tech/v1"

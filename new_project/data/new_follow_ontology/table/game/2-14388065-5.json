@@ -1,0 +1,71 @@
+{
+  "id": "2-14388065-5",
+  "page_title": "2000 NBA All-Star Game",
+  "section_title": "Slam Dunk Contest",
+  "caption": "Contestants",
+  "doc": {
+    "id": "2-14388065-5",
+    "rows": [
+      [
+        "G/F",
+        "Vince Carter",
+        "Toronto Raptors",
+        "6–6",
+        "220"
+      ],
+      [
+        "G/F",
+        "Ricky Davis",
+        "Charlotte Hornets",
+        "6-7",
+        "195"
+      ],
+      [
+        "G",
+        "Steve Francis",
+        "Houston Rockets",
+        "6–3",
+        "210"
+      ],
+      [
+        "G/F",
+        "Larry Hughes",
+        "Philadelphia 76ers",
+        "6–5",
+        "185"
+      ],
+      [
+        "G/F",
+        "Tracy McGrady",
+        "Toronto Raptors",
+        "6–8",
+        "225"
+      ],
+      [
+        "G/F",
+        "Jerry Stackhouse",
+        "Detroit Pistons",
+        "6–6",
+        "218"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "text",
+      "real"
+    ],
+    "header": [
+      "Pos.",
+      "Player",
+      "Team",
+      "Height",
+      "Weight"
+    ],
+    "caption": "Contestants",
+    "page_id": 14388065,
+    "page_title": "2000 NBA All-Star Game",
+    "section_title": "Slam Dunk Contest"
+  }
+}

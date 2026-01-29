@@ -1,0 +1,78 @@
+{
+  "id": "2-17342230-5",
+  "page_title": "1968–69 Boston Celtics season",
+  "section_title": "NBA Finals",
+  "caption": "NBA Finals",
+  "doc": {
+    "id": "2-17342230-5",
+    "rows": [
+      [
+        "Game 1",
+        "April 23",
+        "Los Angeles",
+        "120-118",
+        "Boston"
+      ],
+      [
+        "Game 2",
+        "April 25",
+        "Los Angeles",
+        "118-112",
+        "Boston"
+      ],
+      [
+        "Game 3",
+        "April 27",
+        "Boston",
+        "111-105",
+        "Los Angeles"
+      ],
+      [
+        "Game 4",
+        "April 29",
+        "Boston",
+        "89-88",
+        "Los Angeles"
+      ],
+      [
+        "Game 5",
+        "May 1",
+        "Los Angeles",
+        "117-104",
+        "Boston"
+      ],
+      [
+        "Game 6",
+        "May 3",
+        "Boston",
+        "99-90",
+        "Los Angeles"
+      ],
+      [
+        "Game 7",
+        "May 5",
+        "Los Angeles",
+        "106-108",
+        "Boston"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Game",
+      "Date",
+      "Home Team",
+      "Result",
+      "Road Team"
+    ],
+    "caption": "NBA Finals",
+    "page_id": 17342230,
+    "page_title": "1968–69 Boston Celtics season",
+    "section_title": "NBA Finals"
+  }
+}

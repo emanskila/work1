@@ -1,0 +1,64 @@
+{
+  "id": "2-17101496-4",
+  "page_title": "1964–65 Boston Celtics season",
+  "section_title": "NBA Finals",
+  "caption": "NBA Finals",
+  "doc": {
+    "id": "2-17101496-4",
+    "rows": [
+      [
+        "Game 1",
+        "April 18",
+        "Boston",
+        "142-110",
+        "Los Angeles"
+      ],
+      [
+        "Game 2",
+        "April 19",
+        "Boston",
+        "129-123",
+        "Los Angeles"
+      ],
+      [
+        "Game 3",
+        "April 21",
+        "Los Angeles",
+        "126-105",
+        "Boston"
+      ],
+      [
+        "Game 4",
+        "April 23",
+        "Los Angeles",
+        "99-112",
+        "Boston"
+      ],
+      [
+        "Game 5",
+        "April 25",
+        "Boston",
+        "129-96",
+        "Los Angeles"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Game",
+      "Date",
+      "Home Team",
+      "Result",
+      "Road Team"
+    ],
+    "caption": "NBA Finals",
+    "page_id": 17101496,
+    "page_title": "1964–65 Boston Celtics season",
+    "section_title": "NBA Finals"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "2-17102115-3",
+  "page_title": "1950–51 Rochester Royals season",
+  "section_title": "NBA Finals",
+  "caption": "NBA Finals",
+  "doc": {
+    "id": "2-17102115-3",
+    "rows": [
+      [
+        "Game 1",
+        "April 7",
+        "Rochester",
+        "92-65",
+        "New York"
+      ],
+      [
+        "Game 2",
+        "April 8",
+        "Rochester",
+        "99-84",
+        "New York"
+      ],
+      [
+        "Game 3",
+        "April 11",
+        "New York",
+        "71-78",
+        "Rochester"
+      ],
+      [
+        "Game 4",
+        "April 13",
+        "New York",
+        "79-73",
+        "Rochester"
+      ],
+      [
+        "Game 5",
+        "April 15",
+        "Rochester",
+        "89-92",
+        "New York"
+      ],
+      [
+        "Game 6",
+        "April 18",
+        "New York",
+        "80-73",
+        "Rochester"
+      ],
+      [
+        "Game 7",
+        "April 21",
+        "Rochester",
+        "79-75",
+        "New York"
+      ]
+    ],
+    "types": [
+      "text",
+      "text",
+      "text",
+      "text",
+      "text"
+    ],
+    "header": [
+      "Game",
+      "Date",
+      "Home Team",
+      "Result",
+      "Road Team"
+    ],
+    "caption": "NBA Finals",
+    "page_id": 17102115,
+    "page_title": "1950–51 Rochester Royals season",
+    "section_title": "NBA Finals"
+  }
+}

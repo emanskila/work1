@@ -1,0 +1,81 @@
+[
+  {
+    "qid": "80c2e131-7403-46d9-badc-8a0243f47482",
+    "question": "Named for it's proximity to the local NBA team, what is the name of the WNBA team in Phoenix?",
+    "answer": "13 July 1964",
+    "provenance_doc": {
+      "paragraphs": [
+        {
+          "wikipedia_title": "Dwyane Wade",
+          "paragraph_id": 0,
+          "text": "Dwyane Wade is a former professional basketball player who played for the Chicago Bulls and wore jersey number 3."
+        }
+      ]
+    },
+    "model_response": "Phoenix Mercury",
+    "model_provenance": {
+      "docs": [
+        {
+          "wikipedia_title": "Phoenix Mercury"
+        },
+        {
+          "wikipedia_title": "Phoenix Suns"
+        },
+        {
+          "wikipedia_title": "Las Vegas Aces"
+        },
+        {
+          "wikipedia_title": "2014 WNBA All-Star Game"
+        },
+        {
+          "wikipedia_title": "2008 WNBA season"
+        },
+        {
+          "wikipedia_title": "Portland Fire"
+        },
+        {
+          "wikipedia_title": "2000 WNBA All-Star Game"
+        },
+        {
+          "wikipedia_title": "Chicago Sky"
+        },
+        {
+          "wikipedia_title": "Women's National Basketball Association"
+        },
+        {
+          "wikipedia_title": "2010 WNBA season"
+        },
+        {
+          "wikipedia_title": "2014 WNBA Finals"
+        },
+        {
+          "wikipedia_title": "Orlando Miracle"
+        },
+        {
+          "wikipedia_title": "Utah Starzz"
+        },
+        {
+          "wikipedia_title": "2009 Phoenix Mercury season"
+        },
+        {
+          "wikipedia_title": "Miami Sol"
+        },
+        {
+          "wikipedia_title": "Indiana Fever"
+        },
+        {
+          "wikipedia_title": "Diana Taurasi"
+        },
+        {
+          "wikipedia_title": "Charlotte Sting"
+        },
+        {
+          "wikipedia_title": "2010 Phoenix Mercury season"
+        },
+        {
+          "wikipedia_title": "2012 Phoenix Mercury season"
+        }
+      ]
+    }
+  }
+]
