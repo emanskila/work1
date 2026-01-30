@@ -4,7 +4,14 @@
   "concepts": [
     {
       "id": "player",
-      "aliases": []
+      "aliases": [],
+      "metadata": {
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        }
+      }
     },
     {
       "id": "team",
@@ -16,7 +23,17 @@
     },
     {
       "id": "award",
-      "aliases": []
+      "aliases": [],
+      "metadata": {
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "season": {
+            "type": "string"
+          }
+        }
+      }
     },
     {
       "id": "game",
